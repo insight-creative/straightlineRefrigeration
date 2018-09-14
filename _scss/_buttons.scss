@@ -1,0 +1,82 @@
+/* 7.0 Button Stylings ---------------------------------------*/
+.redLink{
+  color: $primaryColor !important;
+	transition: .3s ease all;
+    &:hover{
+      transition: .3s ease all;
+    	color: #1d1d1d !important;
+    }
+}
+.redButton{
+	position: relative;
+	z-index:1;
+	border: 2px solid $primaryColor;
+	border-radius: 30px;
+	background: $primaryColor;
+	padding: 10px 50px 10px 50px;
+	color: $white !important;
+	text-shadow: 0 1px 1px rgba(0,0,0,1);
+	margin-bottom: 10px;
+	transition: .3s ease all;
+  box-shadow: 1px 2px 10px rgba(42,42,42,.6);
+	cursor: pointer;
+    &:hover{
+      background: $transparent!important;
+    	transition: .3s ease all;
+    	color: $primaryColor !important;
+    }
+}
+.redButtonReverse{
+	position: relative;
+	z-index:1;
+	border: 2px solid $primaryColor;
+	border-radius: 30px;
+	padding: 10px 50px 10px 50px;
+	color: $primaryColor;
+	margin-bottom: 10px;
+	transition: .3s ease all;
+	cursor: pointer;
+    &:hover{
+      background: $primaryColor;
+    	transition: .3s ease all;
+    	color: $white;
+    }
+}
+.plainRedButton{
+	position: relative;
+	z-index:1;
+	border: 2px solid $primaryColor;
+	background: $primaryColor;
+	padding: 10px 50px 10px 50px;
+	color: $white;
+	margin-bottom: 10px;
+	transition: .3s ease all;
+	cursor: pointer;
+}
+.whiteButton{
+	position: relative;
+	z-index:1;
+	border: 2px solid $white;
+	border-radius: 30px;
+	background: $white;
+	padding: 10px 50px 10px 50px;
+	color: $primaryColor;
+	transition: .3s ease all;
+	cursor: pointer;
+    &:hover{
+      background: $transparent;
+    	color: $white;
+    	transition: .3s ease all;
+    }
+}
+.centerButton{
+	margin: 0 auto;
+	text-align: center;
+}
+.buttonWrap{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	margin: 50px auto;
+	text-align: center;
+}

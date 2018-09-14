@@ -1,0 +1,27 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+  <!-- Enable responsiveness on mobile devices -->
+  <meta name="viewport" content="width=device-width">
+
+  <title>{% if page.title %}{{ page.title}} | {% endif %}{{ site.title }}</title>
+
+  <!-- CSS (Bootstrap is loaded via a content delivery network) -->
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
+  <!-- Our custom stylesheet -->
+  <link href="{{ site.baseurl }}/Assets/webfonts/fontawesome-all.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+
+  <!-- Icons -->
+  <link href="{{ site.baseurl }}/img/insightLogo.png" rel="shortcut icon">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries, part of Bootstrap base template -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>

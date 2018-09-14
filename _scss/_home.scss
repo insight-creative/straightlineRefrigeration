@@ -1,0 +1,279 @@
+/* 10.0 Homepage stylings -------------------------------------------*/
+#homeHero{
+	background-image: url("../img/home-nissan-2018.jpg");
+}
+.heroHeadingWrap{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+    @include breakpoint(smallScreen){
+      display: none;
+    }
+    @include breakpoint(largeMobileScreen){
+      display: none;
+    }
+    @include breakpoint(laptopScreen){
+      display: flex;
+    }
+}
+.mobileHeroHeading{
+	display: none;
+    @include breakpoint(smallScreen){
+      background: #1D1D1D;
+		  display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    @include breakpoint(largeMobileScreen){
+      background: #1D1D1D;
+		  display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }@include breakpoint(laptopScreen){
+      display: none;
+    }
+}
+#cobbIntro{
+	background-image: url("../img/cobbtuningLogoBackground.jpg");
+}
+.shopHero{
+	background-image: url("https://expressrecycling.biz/wp-content/uploads/2018/07/stevensPointShopCropped.png");
+}
+#heroHeading{
+	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+}
+#homeHeading{
+	background: rgba(225, 0, 0, 0.7);
+	padding: 50px;
+  @include breakpoint(smallScreen){
+    padding: 20px;
+  }
+  @include breakpoint(largeMobileScreen){
+    padding: 50px;
+  }
+}
+#homeHeroNav{
+	background: $primaryColor;
+	padding: 20px 0 20px 0;
+	font-size: 26px;
+	font-weight: 600;
+}
+.heroHeading{
+	padding: 50px;
+    @include breakpoint(smallScreen){
+      padding: 20px;
+    }
+    @include breakpoint(largeMobileScreen){
+      padding: 50px;
+    }
+}
+.homeNavLink{
+	padding: 30px 20px 30px 20px;
+	transition: .3s ease all;
+	text-decoration: none;
+	border: 2px solid $transparent;
+    &:hover{
+      border: 2px solid $white;
+		  transition: .3s ease all;
+    }
+}
+#recyclingServices{
+	padding: 50px 0 50px 0;
+}
+.workWrap{
+	width: 100%;
+}
+.serviceImage{
+  width: 50%;
+	height: 100%;
+	padding: 0;
+	margin: 0 auto;
+    @include breakpoint(smallScreen){
+      margin: 20px 0 20px 0;
+    }
+    @include breakpoint(largeMobileScreen){
+      width: 50%;
+    	height: 100%;
+    }
+    @include breakpoint(laptopScreen){
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+    }
+      a{
+        text-decoration: none;
+      }
+      &:hover{
+        .featureOverlay{
+          opacity: 1;
+          transition: opacity;
+          transition: .3s ease all;
+        }
+        .borderedOverlay{
+          opacity: 1;
+          transition: opacity;
+          transition: .3s ease all;
+        }
+        h3{
+          color: $primaryColor;
+          transition: .3s ease all;
+        }
+      }
+}
+#homeButtonIcon{
+	margin-left: 20px;
+}
+.introWrap{
+	padding: 50px 20px 50px 20px;
+}
+.introText{
+	padding: 200px 20px 50px 20px;
+	width: 60%;
+	margin:0 auto;
+}
+#workButton{
+	margin-top: 50px;
+}
+.spacer{
+	margin-top: 100px;
+}
+#serviceDesc{
+	padding-bottom: 50px;
+}
+.overlayWrap{
+	position: relative;
+    &:before{
+      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0,0,0,0.5)), to(rgba(255,255,255,0)));
+      background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(255,255,255,0));
+    	position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+    }
+}
+.serviceTitle{
+	position: absolute;
+	width: 100%;
+	top: 20%;
+	text-align: center;
+	text-shadow: 2px 2px 2px rgba(0,0,0,1);
+	color: $white;
+	z-index: 3;
+    @include breakpoint(smallScreen){
+      top: 10%;
+    }
+}
+.title{
+	padding: 50px 50px 10px 50px;
+	transition: .2s ease all;
+    @include breakpoint(tinyScreen){
+      padding: 10px 30px 10px 30px;
+    }
+}
+.desc{
+	padding: 10px 50px 50px 50px;
+    @include breakpoint(tinyScreen){
+      padding: 10px 30px 10px 30px;
+    }
+    @include breakpoint(largeScreen){
+      padding: 10px 70px 50px 70px;
+    }
+}
+.featureOverlay{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 0, 0, .5);
+	transition: opacity;
+	opacity: 0;
+	transition: .3s ease all;
+}
+.borderedOverlay{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	z-index: 2;
+	height: 80%;
+	width: 80%;
+	transition: opacity;
+	opacity: 0;
+	transition: .3s ease all;
+	border: 2px solid $primaryColor;
+}
+#lrgFeaturedWorkImage{
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+.workWrap{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 90%;
+	margin: 0 auto;
+}
+#services a{
+	text-decoration: none;
+}
+.CTAcontent{
+	width: 60%;
+    @include breakpoint(smallScreen){
+      width: 90%;
+		  margin: 0 auto;
+		  text-align: center;
+		  padding: 20px;
+    }
+    @include breakpoint(largeMobileScreen){
+      width: 90%;
+		  margin: 0 auto;
+		  text-align: center;
+		  padding: 20px;
+    }
+    @include breakpoint(smallScreen){
+      width: 60%;
+    }
+}
+.siteCTAWrap{
+	position: relative;
+	background-image: url("../img/products-main.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 200px;
+	padding: 50px 0 50px 0;
+    a{
+      text-decoration: none;
+    }
+}
+.CTAoverlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 300px;
+	width: 100%;
+	background: rgba(0,0,0,.5);
+	z-index: 5;
+	content: "";
+
+}

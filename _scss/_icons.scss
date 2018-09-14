@@ -1,0 +1,15 @@
+/*9.0 Icon Styling -------------------------------------------*/
+.whiteIcon{
+	color: $white;
+	transition: .3s ease all;
+}
+.greyIcon{
+	color: $lightGrey;
+}
+.redIcon{
+	color: $primaryColor;
+}
+.iconBlock{
+	display: flex;
+	flex-direction: column;
+}

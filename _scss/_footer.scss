@@ -1,0 +1,129 @@
+/* 5.0 Footer Stylings -------------------------------------------*/
+.site-info{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: auto;
+	width: 100%;
+	text-align: center;
+	background: $white;
+	list-style-type: none;
+    @include breakpoint(laptopScreen){
+      flex-direction: row;
+		  height: 120px;
+    }
+}
+.site-footer{
+	position: relative;
+	z-index: 2;
+	background-color: $secondaryColor;
+	width: 100%;
+	color: $white;
+	padding: 0 0 50px 0;
+	margin: 0 auto;
+}
+.footerContact{
+  a{
+  	text-decoration: none;
+  	color: $primaryColor;
+  	transition: .3s ease all;
+      &:hover{
+        color: $lightGrey;
+        transition: .3s ease all;
+      }
+  }
+}
+.footerLink{
+	position: relative;
+	color: $primaryColor;
+	text-decoration: none;
+	padding: 10px 20px 10px 20px;
+	margin: 10px 0 10px 0;
+	transition: .3s ease all;
+	font-size: 20px;
+    &:after{
+      position: absolute;
+    	height: 0;
+    	width: 3px;
+    	background: $primaryColor;
+    	content: "";
+    	transition: .3s ease all;
+    	bottom: 12px;
+    	left: 0;
+    }
+    @include breakpoint(smallScreen){
+      bottom: 0;
+      width: 0%;
+    }
+      &:hover{
+        &:after{
+          width: 3px;
+        	height: 50%;
+        	transition: .3s ease all;
+        }
+      }
+}
+#copyrightWrap{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#copyright{
+	background: $primaryColor;
+	margin-bottom: -50px;
+	font-size: 16px;
+		@include breakpoint(smallScreen){
+			font-size: 12px;
+		}
+		@include breakpoint(largeMobileScreen){
+			font-size: 12px;
+		}
+    @include breakpoint(laptopScreen){
+      flex-direction: row;
+			font-size: 16px;
+    }
+      a{
+        text-decoration: none;
+      	color: $white;
+      }
+      &:hover{
+        color: $lightGrey;
+      }
+}
+.copyrightContentWrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+    @include breakpoint(smallScreen){
+      justify-content: center;
+      flex-direction: column;
+    }
+}
+#privacyWrap{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.borderRight{
+	border-right: 1px solid $white;
+	padding: 0 10px 0 10px;
+}
+#privacyLink{
+	padding: 0 10px 0 10px;
+}
+#contactLink{
+	padding: 0 10px 0 10px;
+}
+.siteAuthor{
+	text-align: center;
+    a{
+      color: $white;
+    	text-decoration: none;
+    }
+      &:hover{
+        color: $lightGrey
+      }
+}

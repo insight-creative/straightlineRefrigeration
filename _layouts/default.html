@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navigation.html %}
+
+    <div id="barba-wrapper">
+
+    	<div class="barba-container">
+
+        {{ content }}
+
+      </div>
+
+    </div>
+
+    <!-- jQuery and Bootstrap -->
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- Holder.js for placeholder images -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/holder/2.4.1/holder.js"></script>
+    {% include footer.html %}
+  </body>
+</html>
