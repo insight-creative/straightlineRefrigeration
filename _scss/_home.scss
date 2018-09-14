@@ -1,6 +1,6 @@
 /* 10.0 Homepage stylings -------------------------------------------*/
 #homeHero{
-	background-image: url("../img/home-nissan-2018.jpg");
+	background-image: url("../img/designBuildHeroLarge.jpg");
 }
 .heroHeadingWrap{
 	display: flex;
@@ -54,7 +54,7 @@
 	text-shadow: 1px 1px 1px rgba(0,0,0,.5);
 }
 #homeHeading{
-	background: rgba(225, 0, 0, 0.7);
+	background: rgba(0,128,197,.7);
 	padding: 50px;
   @include breakpoint(smallScreen){
     padding: 20px;

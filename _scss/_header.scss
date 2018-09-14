@@ -11,10 +11,10 @@
 	height: 80px;
 	width: 100%;
 	margin: 0 auto;
-	background: $primaryColor;
+	background: $white;
 	display: flex;
 	align-items: center;
-	box-shadow: 0 0 20px rgba(42,42,42,.7);
+	box-shadow: 0 10px 20px rgba(42,42,42,.1);
 		@include breakpoint(smallScreen){
 			height: 70px;
 		}
@@ -23,7 +23,7 @@
 	height: 40px;
 	margin: 0 auto;
 	width: 100%;
-	background: $secondaryColor;
+	background: $primaryColor;
 	display: flex;
 	align-items: center;
 }
@@ -189,7 +189,7 @@
 			left: 0;
 			width: 3px;
 			height: 0%;
-			background: $white;
+			background: $primaryColor;
 			transition: .3s ease all;
 		}
 		&:hover{
@@ -200,7 +200,7 @@
 			left: 0;
 			width: 3px;
 			height: 50%;
-			background: $white;
+			background: $primaryColor;
 			transition: .3s ease all;
 		}
 	}
@@ -237,10 +237,11 @@
 			height: 70px;
 			align-items:center;
 			list-style-type: none;
-			font-size: 18px;
+			font-size: 20px;
+			font-weight: 600;
 		}
 		a{
-			color:$white;
+			color:$primaryColor;
 			text-decoration: none;
 			transition: .3s ease all;
 		}
