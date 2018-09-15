@@ -4,6 +4,8 @@ This is a Jekyll site for Straightline Refrigeration
 
 # Getting started
 
+<i class="fa fa-gear fa-spin fa-2x" style="color: firebrick"></i> Configuration
+
 # Basic File Structure
 
 ## Pages
