@@ -726,7 +726,7 @@ optgroup,
 textarea {
   color: #020101;
   font-family: 'Open Sans', sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -860,10 +860,10 @@ body {
   margin: 0; }
 
 ::selection {
-  background: rgba(240, 0, 0, 0.5); }
+  background: rgba(0, 128, 197, 0.5); }
 
 ::-moz-selection {
-  background: rgba(240, 0, 0, 0.5); }
+  background: rgba(0, 128, 197, 0.5); }
 
 .plainLink {
   text-decoration: none;
@@ -938,11 +938,26 @@ body {
     .mobileHeroHeading {
       display: none; } }
 
-#cobbIntro {
-  background-image: url("../img/cobbtuningLogoBackground.jpg"); }
+#featuredProjectWrap {
+  position: relative;
+  background-image: url("../img/designBuild2Cropped.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0 100px 0;
+  height: 200px; }
 
-.shopHero {
-  background-image: url("https://expressrecycling.biz/wp-content/uploads/2018/07/stevensPointShopCropped.png"); }
+#projectOverlay {
+  background: rgba(0, 128, 197, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 #heroHeading {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
@@ -1141,7 +1156,7 @@ body {
 
 .siteCTAWrap {
   position: relative;
-  background-image: url("../img/products-main.jpg");
+  background-image: url("../img/designBuild3Cropped.jpg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1157,7 +1172,7 @@ body {
   left: 0;
   height: 300px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 128, 197, 0.7);
   z-index: 5;
   content: ""; }
 
