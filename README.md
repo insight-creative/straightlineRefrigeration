@@ -1,6 +1,6 @@
-# Cobb Tuning Site
+# Straightline Refrigeration website :poop:
 
-This is a Jekyll site to test and practice Jekyll. This also includes ways I believe the cobb tuning site could be improved
+This is a Jekyll site for Straightline Refrigeration
 
 # Getting started
 
@@ -27,5 +27,3 @@ Do not make style changes in the css directory. The styles for the website are a
 ## Writing to your SCSS file
 
 sass --watch \_scss/main.scss:css/main.css
-
-## Test 2 ## Test
