@@ -1,6 +1,6 @@
 /* 8.0 General Body Styles -------------------------------------------*/
 body{
-	background: #e8e8e8;
+	background: #ffffff;
 	margin: 0;
 }
 ::selection{
@@ -17,7 +17,4 @@ body{
     color: $secondaryColor;
     transition: .3s ease all;
     }
-}
-.pageContent{
-	margin-top: -20px;
 }
