@@ -1,35 +1,32 @@
 ---
 layout: default
-title: About - Jekyll Playground
-description: This is a Jekyll Playground that will eventually be used as a template/boilerplate for starting future client projects
+title: About | Custom Industrial Refrigeration Systems, Green Bay, WI
+description: Straightline Refrigeration offers expert custom design, building, and installation of industrial refrigeration systems.
 ---
-<div id="barba-wrapper">
-
-	<div class="barba-container">
-
 		<div id="primary" class="content-area">
 
 			<main id="main" class="site-main">
 
-				<section id="hero">
+				<section id="aboutHero">
 
-					<div class="hero">
+					<div id="homeHero" class="hero">
 
 						<div class="heroOverlay">
 
 							<div class="heroHeadingWrap fullWidth">
 
-								<div id="homeHeading" class="col50">
+								<div id="homeHeading" class="col50 heroHeading">
 
 									<div class="heroHeading">
 
-										<h1 class="whiteText">H1 Hero Heading</h1>
+										<h1 class="whiteText">About Straightline Refrigeration</h1>
 
-										<p class="whiteText">Hero Subheading</p>
+										<p class="whiteText"></p>
 
 									</div>
 
 								</div>
+								<div class="col50"></div>
 
 							</div>
 
@@ -41,42 +38,102 @@ description: This is a Jekyll Playground that will eventually be used as a templ
 
 				<div class="mobileHeroHeading">
 
-					<h1 class="whiteText">Hero Heading </h1>
+					<h1 class="whiteText">Custom Industrial<br>Refrigeration Sytems</h1>
 
-					<p class="whiteText">Hero Subheading</p>
+					<p class="whiteText">Straightline Refrigeration offers expert custom design, building, and installation of industrial refrigeration systems.</p>
 
 				</div>
 
-				<section id="homeHeroNav">
-					<div class="flex-container pageWidth">
-
-						<a class="col30 homeNavLink" href="http://localhost/InsightResponsive/"><div class="centerText"><i class="fas fa-home"></i><p class="whiteText">Mobile Nav 1</p></div></a>
-
-						<a class="col30 homeNavLink" href="http://localhost/InsightResponsive/"><div class="centerText"><i class="fas fa-home"></i><p class="whiteText">Mobile Nav 2</p></div></a>
-
-						<a class="col30 homeNavLink" href="http://localhost/InsightResponsive/"><div class="centerText"><i class="fas fa-home"></i><p class="whiteText">Mobile Nav 3</p></div></a>
-
-					</div>
-				</section>
-				<section id="pageContent">
+				<section class="pageContent">
 
 					<div>
 
-						<section id ="expressIntro">
+						<section id ="straightlineIntro">
 
-							<div class="fullWidth flex-container">
+							<div id="Intro" class="fullWidth flex-container centerAlignedContainer smallPaddedSection">
 
 								<div class="col50">
 
+									<div class="">
+
+										<div class="blockText">
+
+											<h2 class="primaryText">Innovation + Refrigeration</h2>
+
+											<p>
+												With years of ammonia experience, Straightline Refrigeration provides exceptional design, building and installation of fully custom industrial refrigeration systems. As a local contractor, our small team of carefully
+												assembled experts manages each job with the highest standards for customer service, product development, performance and safety.
+											</p>
+
+											<a href="http://localhost/InsightResponsive/"><button class="centerButton primaryButton">Learn More About Us</button></a>
+
+										</div>
+
+									</div>
+
 								</div>
 
-								<div id="introText" class="blockText col50">
+								<div class="col50">
 
-									<h2 class="redText underlinedHeading">Primary Benefit</h2>
+									<img src="/img/straightlineRefrigerationShop.jpg" class="image">
 
-									<p>Here at Insight Creative, we pride ourselves in ensuring that all our customers experience only the best marketing agency Green Bay has to offer. You will find a wide variety of marketing services along with experienced and knowledgeable staff members who will help identify the best opportunities for your business</p>
+								</div>
 
-									<a href="http://localhost/InsightResponsive/"><button class="centerButton redButton">Learn More About Us</button></a>
+							</div>
+
+						</section>
+
+						<section id="featuredProject">
+
+							<div class="fullWidth centeredContainer" id="featuredProjectWrap">
+
+								<div id="projectOverlay">
+
+									<div clas="pageWidth">
+
+										<h2 class="whiteText">Featured Project Title</h2>
+
+										<p class="whiteText">Featured project description</p>
+
+										<a href="http://localhost/InsightResponsive/"><button class="centerButton primaryButton">View Full Project</button></a>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</section>
+
+						<section id ="companyIntro">
+
+							<div class="fullWidth flex-container-reverse centerAlignedContainer smallPaddedSection">
+
+								<div class="col50">
+
+									<img src="/img/straightlineRefrigerationShop.jpg" class="image">
+
+								</div>
+
+								<div class="col50">
+
+									<div class="">
+
+										<div class="blockText">
+
+											<h2 class="primaryText">Our Approach - A Major Cool Factor</h2>
+
+											<p>
+												At Straightline Refrigeration, you'll have one straight line of communication through all stages of your project. Your project foreman serves
+												as your main contact, but also works collaboratively with the entire team from drawing to installation. With direct access to the experts who actually
+												get their hands dirty, you'll find our team to be responsive, capable and flexible to accomodate your unique situation and needs.
+											</p>
+
+											<a href="http://localhost/InsightResponsive/"><button class="centerButton primaryButton">Learn More About Us</button></a>
+
+										</div>
+
+									</div>
 
 								</div>
 
@@ -90,13 +147,7 @@ description: This is a Jekyll Playground that will eventually be used as a templ
 
 								<div class="pageWidth">
 
-									<h2 class="redText centerText">Marketing Services</h2>
-
-									<p id="serviceDesc" class="centerText">
-
-										Text here text here
-
-									</p>
+									<h2 class="primaryText centerText">Industries We Serve</h2>
 
 								</div>
 
@@ -108,15 +159,11 @@ description: This is a Jekyll Playground that will eventually be used as a templ
 
 											<div class="overlayWrap">
 
-												<img class="blockImage" src="">
+												<img class="blockImage" src="{{site.baseurl}}/img/home-sti-ra.jpg">
 
 												<div class="serviceTitle">
 
-													<h3 class="title whiteText">Great Service 1</h3>
-
-													<p class="whiteText desc">
-														Text here
-													</p>
+													<h3 class="title whiteText">Dairy</h3>
 
 												</div>
 
@@ -140,15 +187,11 @@ description: This is a Jekyll Playground that will eventually be used as a templ
 
 											<div class="overlayWrap">
 
-												<img class="blockImage" src="">
+												<img class="blockImage" src="{{site.baseurl}}/img/home-ms3.jpg">
 
 												<div class="serviceTitle">
 
-													<h3 class="title whiteText">Great Service 2</h3>
-
-													<p class="whiteText desc">
-														Text here
-													</p>
+													<h3 class="title whiteText">Food Processing</h3>
 
 												</div>
 
@@ -172,15 +215,11 @@ description: This is a Jekyll Playground that will eventually be used as a templ
 
 											<div class="overlayWrap">
 
-												<img class="blockImage" src="">
+												<img class="blockImage" src="{{site.baseurl}}/img/home-nissan-2018.jpg">
 
 												<div class="serviceTitle">
 
-													<h3 class="title whiteText">Great Service</h3>
-
-													<p class="whiteText desc">
-														Text Here
-													</p>
+													<h3 class="title whiteText">Hmmmm???</h3>
 
 												</div>
 
@@ -204,86 +243,117 @@ description: This is a Jekyll Playground that will eventually be used as a templ
 
 						</section>
 
-						<section id="acceptableMaterials">
-							<div class="fullWidth flex-container-reverse">
+						<section id="clientTestimonials">
 
-								<div class="col50">
+							<div id="testimonials" class="fullWidth centeredContainer">
 
-									<div class="blockText">
+								<div class="pageWidth">
 
-										<h2 class="redText underlinedHeading">Services We Provide</h2>
-
-										<ul>
-
-											<li>Web Design</li>
-											<li>Graphic Design</li>
-											<li>Media Buying</li>
-											<li>Copywriting</li>
-											<li>Video</li>
-											<li>Photography</li>
-											<li>Social Media</li>
-											<li>Public Relations</li>
-
-										</ul>
-
-										<a href="http://localhost/InsightResponsive/"><button class="redButton">View All Marketing Services</button></a>
-
-									</div>
-
-								</div>
-
-								<div class="col50">
-
-									<img class="blockImage" src="">
+									<h2 class="whiteText">From Our Customers</h2>
 
 								</div>
 
 							</div>
+
+						</section>
+
+						<section id="certifications">
+
+							<div class="fullWidth greyBlock centeredContainer smallPaddedSection">
+
+								<div class="pageWidth">
+
+									<h2 class="primaryText">Certified by Some of the Biggest Names in the Industry</h2>
+
+								</div>
+
+									<div class="pageWidth flex-container">
+
+										<div class="col20">
+
+												<div class="logoWrap">
+
+													<img src ="/img/IIAR_logo_swoosh_small.png" class="certLogo">
+
+												</div>
+
+										</div>
+
+										<div class="col20">
+
+												<div class="logoWrap">
+
+													<img src ="/img/pipeWeldingBeureauTransparent.png" class="certLogo">
+
+												</div>
+
+										</div>
+
+										<div class="col20">
+
+												<div class="logoWrap">
+
+													<img src ="/img/ISN_WebFriendlyBadge.png" class="certLogo">
+
+												</div>
+
+										</div>
+
+										<div class="col20">
+
+												<div class="logoWrap">
+
+													<img src ="/img/ua-logo-transparent2.png" class="certLogo">
+
+												</div>
+
+										</div>
+
+										<div class="col20">
+
+												<div class="logoWrap">
+
+													<img src ="/img/MCAA.png" class="certLogo">
+
+												</div>
+
+										</div>
+
+									</div>
+
+							</div>
+
 						</section>
 
 						<div class="siteCTAWrap">
 
-							<a href="http://localhost/InsightResponsive/">
+							<div class="CTAoverlay">
 
-								<div class="CTAcontent">
+									<div class="CTAcontent">
 
-									<h3 class="whiteText">Still looking to learn more? Contact one of our experts</h3>
+										<h2 class="whiteText">Let's Talk Solutions</h2>
 
-									<div class="centeredButton">
+										<p class="whiteText">Whether a small challenge or a grand vision, we'll start with a solid plan.</p>
 
-										<a href="http://localhost/InsightResponsive/"><button class="whiteButton">Contact Us</button></a>
+										<div class="centeredButton">
+
+											<a href="http://localhost/InsightResponsive/"><button class="whiteButton">Contact Us</button></a>
+
+										</div>
 
 									</div>
 
-								</div>
-
-							</a>
+							</div>
 
 						</div>
 
 						<section id="contact">
 
-							<div class="contentBlock flex-container">
+							<div class="fullWidth flex-container">
 
-								<div class="col50">
+									<div class="fullWidth">
 
-									<h4>Insight Creative</h4>
-
-									<a class="plainLink" target="_blank" href="">
-
-										<p>1816 Sal St.</p></a>
-
-										<p>Green Bay WI</p>
-
-										<a class="plainLink" href="tel:(555)555-5555">(555)555-5555</a>
-
-										<br>
-
-									</div>
-
-									<div class="col50">
-
-										<iframe src="" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2857.1358334270067!2d-88.4374370199389!3d44.26602502831783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8803b7061f51df53%3A0xc44fc214a0c9406b!2sStraightline+Refrigeration!5e0!3m2!1sen!2sus!4v1537098566983" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 									</div>
 
@@ -298,7 +368,3 @@ description: This is a Jekyll Playground that will eventually be used as a templ
 			</main>
 
 		</div>
-
-	</div>
-
-</div>

@@ -14,7 +14,7 @@
 	background: $white;
 	display: flex;
 	align-items: center;
-	box-shadow: 0 10px 20px rgba(42,42,42,.1);
+	box-shadow: 0 10px 20px rgba(42,42,42,.2);
 		@include breakpoint(smallScreen){
 			height: 70px;
 		}
@@ -122,6 +122,12 @@
 	position: fixed;
 	transform: translate(0);
 	transition: .1s ease-out all;
+}
+#mobileMenuLogo{
+	display: flex;
+	margin: 0 auto;
+	margin-top: 50px;
+	width: 200px;
 }
 .linkWrap{
 	position: absolute;
@@ -233,6 +239,14 @@
 .linkList2{
 	display:none;
 		@include breakpoint(laptopScreen){
+			display: flex;
+			height: 70px;
+			align-items:center;
+			list-style-type: none;
+			font-size: 18px;
+			font-weight: 600;
+		}
+		@include breakpoint(largeScreen){
 			display: flex;
 			height: 70px;
 			align-items:center;

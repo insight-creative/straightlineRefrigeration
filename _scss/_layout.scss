@@ -94,6 +94,9 @@
         width: 90%;
       }
       @include breakpoint(laptopScreen){
+        width: 80%;
+      }
+			@include breakpoint(largeScreen){
         width: 70%;
       }
 	}
@@ -130,8 +133,11 @@
       padding: 20px;
     }
     @include breakpoint(laptopScreen){
-      padding: 50px;
+      padding: 20px;
     }
+		@include breakpoint(largeScreen){
+			padding: 50px;
+		}
 }
 .textWrap{
   padding: 50px;
@@ -235,18 +241,6 @@
 .blockWrap{
 	display: flex;
 	margin-bottom: 100px;
-}
-.blockText{
-	padding: 20px;
-	margin-top: -30px;
-	width: 90%;
-	margin: 0 auto;
-    @include breakpoint(laptopScreen){
-      padding: 50px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
 }
 .blockImage{
 	display: flex;
