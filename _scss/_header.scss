@@ -71,7 +71,7 @@
 	height: auto;
 	width: 200px;
 		@include breakpoint(smallScreen){
-			width: 75px;
+			width: 125px;
 		}
 }
 	nav{

@@ -103,9 +103,6 @@
 		  transition: .3s ease all;
     }
 }
-#recyclingServices{
-	padding: 50px 0 50px 0;
-}
 .workWrap{
 	width: 100%;
 }
@@ -148,6 +145,17 @@
 }
 .logoWrap{
 	padding: 20px;
+}
+.certLogo{
+	height: 120px;
+	width: auto;
+}
+#testimonials{
+	background-image: url("../img/slantedBackground.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 400px;
 }
 #homeButtonIcon{
 	margin-left: 20px;
@@ -278,7 +286,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	width: 100%;
-	height: 400px;
+	height: 500px;
     a{
       text-decoration: none;
     }
@@ -287,7 +295,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	height: 400px;
+	height: 500px;
 	width: 100%;
 	background: rgba(0, 128, 197,.7);
 	z-index: 5;

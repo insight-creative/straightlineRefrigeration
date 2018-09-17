@@ -369,7 +369,7 @@ Template: Insight-Responsive
   width: 200px; }
   @media (max-width: 600px) {
     .siteLogo {
-      width: 75px; } }
+      width: 125px; } }
 
 nav {
   display: flex;
@@ -619,19 +619,33 @@ nav {
 .site-footer {
   position: relative;
   z-index: 2;
-  background-color: #004e79;
+  background-color: #FFFFFF;
   width: 100%;
-  color: #FFFFFF;
+  color: #232323;
   padding: 0 0 50px 0;
   margin: 0 auto; }
 
-.footerContact a {
-  text-decoration: none;
-  color: #0080c5;
-  transition: .3s ease all; }
-  .footerContact a:hover {
-    color: #F6F6F6;
+.footerLogo {
+  height: auto;
+  width: 300px; }
+  @media (max-width: 600px) {
+    .footerLogo {
+      width: 75px; } }
+
+.footerContact {
+  padding: 50px 0 50px 0;
+  display: flex;
+  align-items: center; }
+  .footerContact a {
+    text-decoration: none;
+    color: #0080c5;
     transition: .3s ease all; }
+    .footerContact a:hover {
+      color: #F6F6F6;
+      transition: .3s ease all; }
+
+.footerLinkWrap {
+  text-align: right; }
 
 .footerLink {
   position: relative;
@@ -659,6 +673,12 @@ nav {
     height: 50%;
     transition: .3s ease all; }
 
+#footerEmail {
+  font-size: 22px; }
+  @media (max-width: 600px) {
+    #footerEmail {
+      font-size: 16px; } }
+
 #copyrightWrap {
   display: flex;
   flex-direction: row;
@@ -666,8 +686,11 @@ nav {
 
 #copyright {
   background: #0080c5;
+  color: #FFFFFF;
   margin-bottom: -50px;
-  font-size: 16px; }
+  font-size: 16px;
+  display: flex;
+  flex-direction: row; }
   @media (max-width: 600px) {
     #copyright {
       font-size: 12px; } }
@@ -684,15 +707,17 @@ nav {
   #copyright:hover {
     color: #F6F6F6; }
 
-.copyrightContentWrap {
+#copyrightContentWrap {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: row; }
   @media (max-width: 600px) {
-    .copyrightContentWrap {
+    #copyrightContentWrap {
       justify-content: center;
       flex-direction: column; } }
+
+#copyrightLinkWrap {
+  text-align: center; }
 
 #privacyWrap {
   display: flex;
@@ -710,7 +735,7 @@ nav {
   padding: 0 10px 0 10px; }
 
 .siteAuthor {
-  text-align: center; }
+  text-align: right; }
   .siteAuthor a {
     color: #FFFFFF;
     text-decoration: none; }
@@ -760,7 +785,8 @@ h6 {
   text-shadow: 0 2px 2px black; }
 
 .primaryText {
-  color: #0080c5; }
+  color: #0080c5;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.4); }
 
 .centerText {
   text-align: center; }
@@ -993,9 +1019,6 @@ body {
     border: 2px solid #FFFFFF;
     transition: .3s ease all; }
 
-#recyclingServices {
-  padding: 50px 0 50px 0; }
-
 .workWrap {
   width: 100%; }
 
@@ -1032,6 +1055,17 @@ body {
 
 .logoWrap {
   padding: 20px; }
+
+.certLogo {
+  height: 120px;
+  width: auto; }
+
+#testimonials {
+  background-image: url("../img/slantedBackground.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 400px; }
 
 #homeButtonIcon {
   margin-left: 20px; }
@@ -1161,7 +1195,7 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 400px; }
+  height: 500px; }
   .siteCTAWrap a {
     text-decoration: none; }
 
@@ -1169,7 +1203,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  height: 400px;
+  height: 500px;
   width: 100%;
   background: rgba(0, 128, 197, 0.7);
   z-index: 5;
