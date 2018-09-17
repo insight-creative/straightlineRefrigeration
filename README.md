@@ -38,7 +38,7 @@ Builds your site any time a source file changes and serves it locally at http://
 
 ## Add a project
 
-## :computer: Live Sitemap
+## :computer: Deploying to Testing Site/Live Site
 
 Live site/testing site is hosted on Cloudways
 
