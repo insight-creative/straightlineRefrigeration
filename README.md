@@ -37,3 +37,13 @@ sass --watch \_scss/main.scss:css/main.css
 Builds your site any time a source file changes and serves it locally at http://127.0.0.1:4000
 
 ## Add a project
+
+## :computer: Live Sitemap
+
+Live site/testing site is hosted on Cloudways
+
+  1. Log into Cloudways dashboard and find your application
+
+  2. Open FTP and find the appropriate application.
+
+  3. Copy all files from your \_site folder into your public_html folder
