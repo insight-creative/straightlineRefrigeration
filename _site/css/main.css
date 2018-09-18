@@ -254,7 +254,8 @@ Template: Insight-Responsive
 .blockImage {
   display: flex;
   max-width: 100%;
-  max-height: 100%; }
+  max-height: 100%;
+  box-shadow: 0 10px 20px rgba(42, 42, 42, 0.4); }
 
 .imageBlock {
   padding: 100px 0 100px 0; }
@@ -926,7 +927,8 @@ h6 {
   padding: 10px 50px 10px 50px;
   color: #0080c5;
   transition: .3s ease all;
-  cursor: pointer; }
+  cursor: pointer;
+  box-shadow: 1px 2px 10px rgba(42, 42, 42, 0.6); }
   .whiteButton:hover {
     background: rgba(0, 0, 0, 0);
     color: #FFFFFF;

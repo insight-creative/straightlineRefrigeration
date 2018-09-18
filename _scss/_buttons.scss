@@ -63,6 +63,7 @@
 	color: $primaryColor;
 	transition: .3s ease all;
 	cursor: pointer;
+  box-shadow: 1px 2px 10px rgba(42,42,42,.6);
     &:hover{
       background: $transparent;
     	color: $white;
