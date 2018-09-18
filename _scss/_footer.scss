@@ -44,15 +44,15 @@
 	padding: 50px 0 50px 0;
 	display: flex;
 	align-items: center;
-  a{
-  	text-decoration: none;
-  	color: $primaryColor;
-  	transition: .3s ease all;
-      &:hover{
-        color: $lightGrey;
-        transition: .3s ease all;
-      }
-  }
+	  a{
+	  	text-decoration: none;
+	  	color: $primaryColor;
+	  	transition: .3s ease all;
+	      &:hover{
+	        color: $secondaryColor;
+	        transition: .3s ease all;
+	      }
+  	}
 }
 #footerLogo{
 	@include breakpoint(smallScreen){
@@ -123,6 +123,9 @@
 	@include breakpoint(largeMobileScreen){
 		justify-content: center;
 	}
+	@include breakpoint(laptopScreen){
+		justify-content: left;
+	}
 }
 #copyright{
 	background: $primaryColor;
@@ -173,6 +176,13 @@
 }
 #copyrightLinkWrap{
 	text-align: center;
+		a{
+			color: $white;
+			text-decoration: none;
+		}
+			&:hover{
+				color: $secondaryColor;
+			}
 }
 #privacyWrap{
 	display: flex;
@@ -189,15 +199,8 @@
 #contactLink{
 	padding: 0 10px 0 10px;
 }
-.siteAuthor{
+#siteAuthor{
 	text-align: right;
-    a{
-      color: $white;
-    	text-decoration: none;
-    }
-      &:hover{
-        color: $lightGrey
-      }
 		@include breakpoint(smallScreen){
 			text-align: center;
 			padding: 10px;
@@ -205,5 +208,17 @@
 		@include breakpoint(largeMobileScreen){
 			text-align: center;
 			padding: 10px;
+		}
+		@include breakpoint(laptopScreen){
+			text-align: right;
+		}
+}
+#siteAuthorLink{
+	a{
+		color: $white;
+		text-decoration: none;
+	}
+		&:hover{
+			color: $secondaryColor;
 		}
 }

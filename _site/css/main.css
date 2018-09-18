@@ -658,7 +658,7 @@ nav {
     color: #0080c5;
     transition: .3s ease all; }
     .footerContact a:hover {
-      color: #F6F6F6;
+      color: #004e79;
       transition: .3s ease all; }
 
 @media (max-width: 600px) {
@@ -725,6 +725,9 @@ nav {
   @media (min-width: 600px) {
     #copyrightWrap {
       justify-content: center; } }
+  @media (min-width: 992px) {
+    #copyrightWrap {
+      justify-content: left; } }
 
 #copyright {
   background: #0080c5;
@@ -773,6 +776,11 @@ nav {
 
 #copyrightLinkWrap {
   text-align: center; }
+  #copyrightLinkWrap a {
+    color: #FFFFFF;
+    text-decoration: none; }
+  #copyrightLinkWrap:hover {
+    color: #004e79; }
 
 #privacyWrap {
   display: flex;
@@ -789,21 +797,25 @@ nav {
 #contactLink {
   padding: 0 10px 0 10px; }
 
-.siteAuthor {
+#siteAuthor {
   text-align: right; }
-  .siteAuthor a {
-    color: #FFFFFF;
-    text-decoration: none; }
-  .siteAuthor:hover {
-    color: #F6F6F6; }
   @media (max-width: 600px) {
-    .siteAuthor {
+    #siteAuthor {
       text-align: center;
       padding: 10px; } }
   @media (min-width: 600px) {
-    .siteAuthor {
+    #siteAuthor {
       text-align: center;
       padding: 10px; } }
+  @media (min-width: 992px) {
+    #siteAuthor {
+      text-align: right; } }
+
+#siteAuthorLink a {
+  color: #FFFFFF;
+  text-decoration: none; }
+#siteAuthorLink:hover {
+  color: #004e79; }
 
 /* 6.0 Site Typography -------------------------------------------*/
 body,
