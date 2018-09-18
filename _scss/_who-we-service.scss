@@ -1,0 +1,14 @@
+/* 12.0 Who-We-Service Page Styling --------------------------------------- */
+.iconWrap{
+  display:flex;
+  align-items:center;
+}
+.serviceIcon{
+  margin-left: 50px;
+}
+.descWrap{
+  padding: 0 50px 0 50px;
+  @include breakpoint(smallScreen){
+    padding: 0 20px 0 20px;
+  }
+}

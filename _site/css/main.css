@@ -254,8 +254,7 @@ Template: Insight-Responsive
 .blockImage {
   display: flex;
   max-width: 100%;
-  max-height: 100%;
-  box-shadow: 0 10px 20px rgba(42, 42, 42, 0.4); }
+  max-height: 100%; }
 
 .imageBlock {
   padding: 100px 0 100px 0; }
@@ -972,7 +971,7 @@ body {
 .greyIcon {
   color: #F6F6F6; }
 
-.redIcon {
+.primaryIcon {
   color: #0080c5; }
 
 .iconBlock {
@@ -1166,7 +1165,8 @@ body {
   padding-bottom: 50px; }
 
 .overlayWrap {
-  position: relative; }
+  position: relative;
+  transform-style: preserve-3d; }
   .overlayWrap:before {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(255, 255, 255, 0)));
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
@@ -1176,6 +1176,18 @@ body {
     content: "";
     width: 100%;
     height: 100%; }
+  .overlayWrap:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    box-shadow: 10px 10px 20px rgba(51, 51, 51, 0.7), 0 20px 50px 0 rgba(51, 51, 51, 0.2);
+    -webkit-transform: translateZ(-20px);
+    transform: translateZ(-20px);
+    z-index: -1; }
 
 .serviceTitle {
   position: absolute;
@@ -1184,7 +1196,8 @@ body {
   text-align: center;
   text-shadow: 2px 2px 2px black;
   color: #FFFFFF;
-  z-index: 3; }
+  z-index: 3;
+  transform: translateZ(100px); }
   @media (max-width: 600px) {
     .serviceTitle {
       top: 10%; } }
@@ -1231,7 +1244,8 @@ body {
   transition: opacity;
   opacity: 0;
   transition: .3s ease all;
-  border: 2px solid #0080c5; }
+  border: 2px solid #0080c5;
+  transform: translateZ(50px); }
 
 #lrgFeaturedWorkImage {
   text-align: center;
@@ -1286,11 +1300,32 @@ body {
   display: flex;
   align-items: center; }
 
+/* 11.0 About Page Styling --------------------------------------- */
+.teamImages {
+  padding: 20px; }
+
+/* 12.0 Who-We-Service Page Styling --------------------------------------- */
+.iconWrap {
+  display: flex;
+  align-items: center; }
+
+.serviceIcon {
+  margin-left: 50px; }
+
+.descWrap {
+  padding: 0 50px 0 50px; }
+  @media (max-width: 600px) {
+    .descWrap {
+      padding: 0 20px 0 20px; } }
+
 #privacyPolicy {
   margin-top: 200px; }
 
 #sitemap {
   margin-top: 200px; }
+
+.sublink {
+  margin-left: 50px; }
 
 .contactWrap {
   margin: 0 auto;
