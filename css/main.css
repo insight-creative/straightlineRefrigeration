@@ -1063,14 +1063,14 @@ body {
 #heroHeading {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
-#homeHeading {
+.homeHeading {
   background: rgba(0, 128, 197, 0.7);
   padding: 50px; }
   @media (max-width: 600px) {
-    #homeHeading {
+    .homeHeading {
       padding: 20px; } }
   @media (min-width: 600px) {
-    #homeHeading {
+    .homeHeading {
       padding: 50px; } }
 
 #homeHeroNav {
