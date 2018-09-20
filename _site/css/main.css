@@ -1152,9 +1152,8 @@ body {
       height: 120px; } }
 
 #testimonials {
-  background-image: url("../img/slantedBackground.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #232323;
+  background-image: url("../img/maze-black.png");
   background-position: center center;
   height: 400px; }
 
@@ -1373,5 +1372,27 @@ body {
   #primaryContact input[type="submit"] {
     margin-top: 10px;
     border-bottom: none; }
+
+#cd-zoom-in,
+#cd-zoom-out {
+  width: 32px;
+  height: 32px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: rgba(0, 128, 197, 0.8);
+  background-image: url("../img/contact/cd-icon-controller.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 64px; }
+  #cd-zoom-in:hover,
+  #cd-zoom-out:hover {
+    background-color: #0080c5; }
+
+#cd-zoom-in {
+  margin-top: 10px;
+  margin-bottom: 1px;
+  background-position: 50% 0; }
+
+#cd-zoom-out {
+  background-position: 50% -32px; }
 
 /*# sourceMappingURL=main.css.map */

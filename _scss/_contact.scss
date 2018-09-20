@@ -35,3 +35,31 @@
       border-bottom: none;
     }
 }
+#cd-zoom-in,
+#cd-zoom-out {
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+
+    cursor: pointer;
+
+    background-color: rgba($primaryColor, .8);
+    background-image: url('../img/contact/cd-icon-controller.svg');
+    background-repeat: no-repeat;
+    background-size: 32px 64px;
+
+    &:hover {
+        background-color: rgba($primaryColor, 1);
+    }
+}
+
+#cd-zoom-in {
+    margin-top: 10px;
+    margin-bottom: 1px;
+
+    background-position: 50% 0;
+}
+
+#cd-zoom-out {
+    background-position: 50% -32px;
+}
