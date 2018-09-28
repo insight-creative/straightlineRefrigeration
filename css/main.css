@@ -1314,8 +1314,24 @@ body {
   align-items: center; }
 
 /* 11.0 About Page Styling --------------------------------------- */
+#aboutHero {
+  background-image: url("../img/straightlineRefrigerationOfficeCropped.jpg"); }
+
+#contactWrap {
+  border: 2px solid #e6e6e6;
+  padding: 20px; }
+
+#contactWrapEmail {
+  font-size: 16px; }
+
 .teamImages {
   padding: 20px; }
+  @media (max-width: 600px) {
+    .teamImages {
+      padding: 0; } }
+  @media (min-width: 992px) {
+    .teamImages {
+      padding: 20px; } }
 
 /* 12.0 Who-We-Service Page Styling --------------------------------------- */
 .iconWrap {
