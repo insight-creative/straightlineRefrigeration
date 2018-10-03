@@ -996,6 +996,12 @@ body {
 #homeHero {
   background-image: url("../img/designBuildHeroLarge.jpg"); }
 
+#homeHeroTitle {
+  font-size: 2em; }
+  @media (min-width: 1250px) {
+    #homeHeroTitle {
+      font-size: 2.827em; } }
+
 .heroHeadingWrap {
   display: flex;
   flex-direction: row;
@@ -1346,6 +1352,12 @@ body {
   @media (max-width: 600px) {
     .descWrap {
       padding: 0 20px 0 20px; } }
+  @media (min-width: 600px) {
+    .descWrap {
+      padding: 0 20px 0 20px; } }
+  @media (min-width: 1250px) {
+    .descWrap {
+      padding: 0 50px 0 50px; } }
 
 #privacyPolicy {
   margin-top: 200px; }

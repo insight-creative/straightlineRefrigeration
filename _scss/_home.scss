@@ -2,6 +2,12 @@
 #homeHero{
 	background-image: url("../img/designBuildHeroLarge.jpg");
 }
+#homeHeroTitle{
+	font-size: 2em;
+		@include breakpoint(largeScreen){
+			font-size: 2.827em;
+	}
+}
 .heroHeadingWrap{
 	display: flex;
 	flex-direction: row;

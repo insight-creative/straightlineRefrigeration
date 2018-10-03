@@ -10,5 +10,9 @@
   padding: 0 50px 0 50px;
   @include breakpoint(smallScreen){
     padding: 0 20px 0 20px;
+  }@include breakpoint(largeMobileScreen){
+    padding: 0 20px 0 20px;
+  }@include breakpoint(largeScreen){
+    padding: 0 50px 0 50px;
   }
 }

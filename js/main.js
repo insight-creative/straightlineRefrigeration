@@ -415,17 +415,9 @@ $(function() {
 });
 
 // smooth scroll to elements in inner services nav
-
 $(document).on('click', 'a[href^="#container"]', function (event) {
-
     event.preventDefault();
-
-
-
     $('html, body').animate({
-
       scrollTop: $($.attr(this, 'href')).offset().top
-
      }, 1500);
-
 });
