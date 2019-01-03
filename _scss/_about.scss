@@ -1,6 +1,6 @@
 /* 11.0 About Page Styling --------------------------------------- */
 #aboutHero{
-  background-image: url("../img/straightlineRefrigerationOfficeCropped.jpg");
+  background-image: url("../img/companyPhotoCropped.jpg");
 }
 #contactWrap{
   border: 2px solid #e6e6e6;
@@ -17,4 +17,7 @@
   @include breakpoint(laptopScreen){
     padding: 20px;
   }
+}
+.ownerName{
+  margin-top: 20px !important;
 }
