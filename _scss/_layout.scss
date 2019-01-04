@@ -181,6 +181,7 @@
   height: 90vh;
   width: 100%;
   content: "";
+	background: rgba(0,0,0,.3);
   @include breakpoint(smallScreen){
     height: 50vh;
   }
@@ -266,6 +267,10 @@
 .greyBlock{
 	padding: 100px 0 100px 0;
 	background: $lightGrey;
+}
+.whiteBlock{
+	padding: 100px 0 100px 0;
+	background: $white;
 }
 .blackBlock{
 	background: $black;

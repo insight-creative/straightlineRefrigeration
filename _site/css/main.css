@@ -1,5 +1,4 @@
 /*
-Theme Name: Insight-Responsive-Child
 Author: Justin Parsons
 Author URI: https://seejustincode.com/
 Version: 1.0.0
@@ -189,7 +188,8 @@ Template: Insight-Responsive
   z-index: 999;
   height: 90vh;
   width: 100%;
-  content: ""; }
+  content: "";
+  background: rgba(0, 0, 0, 0.3); }
   @media (max-width: 600px) {
     .heroOverlay {
       height: 50vh; } }
@@ -275,6 +275,10 @@ Template: Insight-Responsive
 .greyBlock {
   padding: 100px 0 100px 0;
   background: #F6F6F6; }
+
+.whiteBlock {
+  padding: 100px 0 100px 0;
+  background: #FFFFFF; }
 
 .blackBlock {
   background: #232323; }
@@ -997,7 +1001,7 @@ body {
 
 /* 10.0 Homepage stylings -------------------------------------------*/
 #homeHero {
-  background-image: url("../img/designBuildHeroLarge.jpg"); }
+  background-image: url("../img/designBuildHeroLarge2.jpg"); }
 
 #homeHeroTitle {
   font-size: 2em; }
@@ -1345,6 +1349,11 @@ body {
 .ownerName {
   margin-top: 20px !important; }
 
+.smallItem {
+  font-size: 14px;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: 900; }
+
 /* 12.0 Who-We-Service Page Styling --------------------------------------- */
 .iconWrap {
   display: flex;
@@ -1365,15 +1374,18 @@ body {
     .descWrap {
       padding: 0 50px 0 50px; } }
 
+/* 13.0 Privacy Policy -------------------------------------------*/
 #privacyPolicy {
   margin-top: 200px; }
 
+/* 14.0 Sitemap -------------------------------------------*/
 #sitemap {
   margin-top: 200px; }
 
 .sublink {
   margin-left: 50px; }
 
+/* 15.0 Contact -------------------------------------------*/
 .contactWrap {
   margin: 0 auto;
   margin-bottom: 50px; }
@@ -1428,5 +1440,26 @@ body {
 
 #cd-zoom-out {
   background-position: 50% -32px; }
+
+/* 16.0 Projects -------------------------------------------*/
+.centeredProjectImage {
+  margin: 0 auto; }
+
+.primaryProjectImage {
+  margin-top: 25px; }
+
+.projectInrto {
+  margin-top: 200px; }
+
+.projectGalleryImage {
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 768px) {
+    .projectGalleryImage {
+      margin-left: 20px;
+      margin-right: 20px; } }
+
+#CADHeader {
+  margin-bottom: 25px !important; }
 
 /*# sourceMappingURL=main.css.map */

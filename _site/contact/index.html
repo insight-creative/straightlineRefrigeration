@@ -34,9 +34,9 @@
 
   <body>
 
-    <div class = "menu">
+    <div class = "menu" role="menu">
 
-	<a href="/"><img src="/img/logoWhiteMedium.png" id="mobileMenuLogo"></a>
+	<a href="/"><img src="/img/logos/logoWhiteMedium.png" id="mobileMenuLogo" alt="Straightline Refrigeration Logo"></a>
 
 		<div class = "linkWrap">
 
@@ -86,7 +86,7 @@
 
 <div id="page" class="site">
 
-	<header id="masthead" class="site-header">
+	<header id="masthead" class="site-header" role="banner">
 
 		<div class="secondaryNavigation">
 
@@ -100,13 +100,13 @@
 
 		</div>
 
-		<div id="site-navigation" class="main-navigation">
+		<div id="site-navigation" class="main-navigation" role="navigation">
 
 			<nav>
 
 				<div class="pageWidth menuLinkWrap">
 
-						<a href="/"><img src="/img/logoWhiteMedium.png" class="siteLogo" ></a>
+						<a href="/"><img src="/img/logos/logoWhiteMedium.png" class="siteLogo" alt="Straightline Refrigeration Logo"></a>
 
 						<ul class="linkList2">
 
@@ -174,7 +174,7 @@
 
 			<section id="contactHero">
 
-				<div id="homeHero" class="hero">
+				<div id="homeHero" class="hero" aria-label="[Custom refrigeration build by Straightline Refrigeration]">
 
 					<div class="heroOverlay">
 
@@ -221,7 +221,7 @@
 								Whether a small challenge or a grand vision, we'll start with a solid plan. Set up a consultation!
 							</p>
 
-							<h3>Call us at <a class="plainLink" href="tel: (920)903-1043">(920)903-1043</a></h3>
+							<h3>Call us at <a class="plainLink" href="tel:(920)903-1043">(920)903-1043</a></h3>
 
 							<p>Or email us by completing the following form.</p>
 
@@ -233,15 +233,15 @@
 								  <input type="hidden" name="_next" value="http://127.0.0.1:4000/jekyllTest/thank-you/" />
 
 								  <!-- all your input fields here.... -->
-								  <input type='text' name='firstName' placeholder='First Name' required/>
+								  <input type='text' name='firstName' placeholder='First Name' aria-label="first name" required/>
 
-									<input type='text' name='lastName' placeholder='Last Name'/>
+									<input type='text' name='lastName' placeholder='Last Name' aria-label="last name"/>
 
-									<input type='email' name='_replyto' placeholder='you@email.com'/>
+									<input type='email' name='_replyto' placeholder='you@email.com' aria-label="email address"/>
 
-									<input type='phone' name='phone' placeholder='Phone'/>
+									<input type='tel' name='phone' placeholder='Phone' aria-label="phone number"/>
 
-									<textarea name="message" placeholder='Leave your message here'></textarea>
+									<textarea name="message" placeholder='Leave your message here' aria-label="leave your message here"></textarea>
 
 									<input type="text" name="_gotcha" style="display:none" />
 
@@ -293,7 +293,7 @@
 
       <div class="col30" id="footerLogo">
 
-        <a href="/"><img src="/img/logoWhiteMedium.png" class="footerLogo" ></a>
+        <a href="/"><img src="/img/logos/logoWhiteMedium.png" class="footerLogo" alt="Straightline Refrigeration Logo"></a>
 
       </div>
 

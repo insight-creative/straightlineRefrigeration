@@ -1,0 +1,21 @@
+/* 16.0 Projects -------------------------------------------*/
+.centeredProjectImage{
+  margin: 0 auto;
+}
+.primaryProjectImage{
+    margin-top: 25px;
+}
+.projectInrto{
+  margin-top: 200px;
+}
+.projectGalleryImage{
+  margin-left: 0;
+  margin-right: 0;
+    @include breakpoint(tabletScreen){
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+}
+#CADHeader{
+  margin-bottom: 25px !important;
+}
