@@ -1374,6 +1374,29 @@ body {
     .descWrap {
       padding: 0 50px 0 50px; } }
 
+.industriesServiced {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px; }
+
+.linkWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  align-items: center; }
+  .linkWrapper:hover .smallChevron {
+    transition: .2s ease all;
+    margin-left: 15px;
+    color: #004e79 !important; }
+
+.borderLeft {
+  border-left: 0.5px solid #0080c5; }
+
+.smallChevron {
+  font-size: 16px;
+  margin-left: 10px;
+  transition: .2s ease all; }
+
 /* 13.0 Privacy Policy -------------------------------------------*/
 #privacyPolicy {
   margin-top: 200px; }

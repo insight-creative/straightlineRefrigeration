@@ -16,3 +16,27 @@
     padding: 0 50px 0 50px;
   }
 }
+.industriesServiced{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.linkWrapper{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+  align-items: center;
+  &:hover .smallChevron{
+    transition: .2s ease all;
+    margin-left: 15px;
+    color: $secondaryColor !important;
+  }
+}
+.borderLeft{
+  border-left: .5px solid $primaryColor;
+}
+.smallChevron{
+  font-size: 16px;
+  margin-left: 10px;
+  transition: .2s ease all;
+}
