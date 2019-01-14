@@ -67,6 +67,8 @@
 }
 .footerLinkWrap{
 	text-align: right;
+	display: flex;
+	flex-direction: column;
 		@include breakpoint(smallScreen){
 			text-align: center;
 		}
@@ -75,6 +77,9 @@
 		}
 		@include breakpoint(laptopScreen){
 			text-align: right;
+		}
+		a{
+			padding: 20px 0 20px 0;
 		}
 }
 .footerLink{

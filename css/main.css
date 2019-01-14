@@ -97,7 +97,7 @@ Template: Insight-Responsive
   margin: 0 auto; }
   @media (max-width: 600px) {
     .pageWidth {
-      width: 90%; } }
+      width: 95%; } }
   @media (min-width: 600px) {
     .pageWidth {
       width: 90%; } }
@@ -170,7 +170,8 @@ Template: Insight-Responsive
   height: 90vh;
   width: 100%;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: center center; }
   @media (max-width: 600px) {
     .hero {
       height: 50vh; } }
@@ -336,7 +337,7 @@ Template: Insight-Responsive
 
 .secondaryLink {
   color: #FFFFFF;
-  padding: 0 10px 0 10px;
+  padding: 10px;
   text-decoration: none;
   transition: .3s ease all;
   font-size: 16px; }
@@ -362,9 +363,9 @@ Template: Insight-Responsive
   display: none; }
 
 .siteLogo {
-  margin-top: 8px;
+  margin-top: 10px;
   height: auto;
-  width: 200px; }
+  width: 250px; }
   @media (max-width: 600px) {
     .siteLogo {
       width: 125px; } }
@@ -387,13 +388,14 @@ nav {
 .menuTextWrap {
   display: flex;
   margin-left: 10px;
-  right: 100px; }
+  right: 100px;
+  padding: 20px; }
 
 .menuBars {
   cursor: pointer;
   display: inline-block;
   width: 30px;
-  padding-top: 7px; }
+  padding-top: 8px; }
   .menuBars span {
     display: block;
     position: relative;
@@ -678,7 +680,9 @@ nav {
     text-align: left; } }
 
 .footerLinkWrap {
-  text-align: right; }
+  text-align: right;
+  display: flex;
+  flex-direction: column; }
   @media (max-width: 600px) {
     .footerLinkWrap {
       text-align: center; } }
@@ -688,6 +692,8 @@ nav {
   @media (min-width: 992px) {
     .footerLinkWrap {
       text-align: right; } }
+  .footerLinkWrap a {
+    padding: 20px 0 20px 0; }
 
 .footerLink {
   position: relative;
@@ -844,7 +850,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2em; }
-  @media (min-width: 600px) {
+  @media (min-width: 1250px) {
     h1 {
       font-size: 2.827em; } }
 
@@ -987,7 +993,7 @@ body {
 .whiteIcon {
   color: #FFFFFF;
   transition: .3s ease all;
-  font-size: 16px; }
+  font-size: 12px; }
 
 .greyIcon {
   color: #F6F6F6; }
@@ -1058,7 +1064,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 100px 0 100px 0;
+  padding: 120px 0 120px 0;
   height: 200px; }
 
 #projectOverlay {
@@ -1068,7 +1074,7 @@ body {
   left: 0;
   content: "";
   width: 100%;
-  height: 400px;
+  height: 440px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -1092,14 +1098,12 @@ body {
   font-size: 26px;
   font-weight: 600; }
 
-.heroHeading {
-  padding: 50px; }
-  @media (max-width: 600px) {
-    .heroHeading {
-      padding: 20px; } }
-  @media (min-width: 600px) {
-    .heroHeading {
-      padding: 50px; } }
+@media (max-width: 600px) {
+  .heroHeading {
+    padding: 20px; } }
+@media (min-width: 600px) {
+  .heroHeading {
+    padding: 25px; } }
 
 .homeNavLink {
   padding: 30px 20px 30px 20px;
@@ -1125,7 +1129,8 @@ body {
   @media (min-width: 600px) {
     .serviceImage {
       width: 100%;
-      height: 100%; } }
+      height: 100%;
+      margin-bottom: 50px; } }
   @media (min-width: 992px) {
     .serviceImage {
       width: 100%;
@@ -1159,7 +1164,7 @@ body {
       height: 100px; } }
   @media (min-width: 992px) {
     .certLogo {
-      height: 50px; } }
+      height: 60px; } }
   @media (min-width: 1250px) {
     .certLogo {
       height: 120px; } }
@@ -1327,8 +1332,8 @@ body {
   align-items: center; }
 
 /* 11.0 About Page Styling --------------------------------------- */
-#aboutHero {
-  background-image: url("../img/companyPhotoCropped.jpg"); }
+.teamHero {
+  background-image: url("../img/TeamPic01.04.19Cropped.jpg"); }
 
 #contactWrap {
   border: 2px solid #e6e6e6;
@@ -1353,6 +1358,9 @@ body {
   font-size: 14px;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 900; }
+
+#aboutHeadingWrap {
+  align-items: flex-end !important; }
 
 /* 12.0 Who-We-Service Page Styling --------------------------------------- */
 .iconWrap {
@@ -1484,5 +1492,18 @@ body {
 
 .galleryHeader {
   margin-bottom: 25px !important; }
+
+@media (max-width: 600px) {
+  .projectsIntro {
+    width: 95%; } }
+@media (min-width: 600px) {
+  .projectsIntro {
+    width: 95%; } }
+@media (min-width: 768px) {
+  .projectsIntro {
+    width: 70%; } }
+@media (min-width: 1250px) {
+  .projectsIntro {
+    width: 50%; } }
 
 /*# sourceMappingURL=main.css.map */

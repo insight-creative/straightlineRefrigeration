@@ -19,3 +19,17 @@
 .galleryHeader{
   margin-bottom: 25px !important;
 }
+.projectsIntro{
+  @include breakpoint(smallScreen){
+    width: 95%;
+  }
+  @include breakpoint(largeMobileScreen){
+    width: 95%;
+  }
+  @include breakpoint(tabletScreen){
+    width: 70%;
+  }
+  @include breakpoint(largeScreen){
+    width: 50%;
+  }
+}

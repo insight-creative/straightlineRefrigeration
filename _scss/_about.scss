@@ -1,6 +1,6 @@
 /* 11.0 About Page Styling --------------------------------------- */
-#aboutHero{
-  background-image: url("../img/companyPhotoCropped.jpg");
+.teamHero{
+  background-image: url("../img/TeamPic01.04.19Cropped.jpg");
 }
 #contactWrap{
   border: 2px solid #e6e6e6;
@@ -25,4 +25,7 @@
   font-size: 14px;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 900;
+}
+#aboutHeadingWrap{
+  align-items: flex-end !important;
 }

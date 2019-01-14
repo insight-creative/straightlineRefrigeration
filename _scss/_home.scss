@@ -56,7 +56,7 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
-	padding: 100px 0 100px 0;
+	padding: 120px 0 120px 0;
 	height: 200px;
 }
 #projectOverlay{
@@ -66,7 +66,7 @@
 	left: 0;
 	content: "";
 	width: 100%;
-	height: 400px;
+	height: 440px;
 	display: flex;
 	align-items:center;
 	justify-content: center;
@@ -91,12 +91,11 @@
 	font-weight: 600;
 }
 .heroHeading{
-	padding: 50px;
     @include breakpoint(smallScreen){
       padding: 20px;
     }
     @include breakpoint(largeMobileScreen){
-      padding: 50px;
+      padding: 25px;
     }
 }
 .homeNavLink{
@@ -124,6 +123,7 @@
     @include breakpoint(largeMobileScreen){
       width: 100%;
     	height: 100%;
+			margin-bottom: 50px;
     }
     @include breakpoint(laptopScreen){
       width: 100%;
@@ -163,7 +163,7 @@
 			height: 100px;
 		}
 		@include breakpoint(laptopScreen){
-			height: 50px;
+			height: 60px;
 		}
 		@include breakpoint(largeScreen){
 			height: 120px;
