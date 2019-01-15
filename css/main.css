@@ -692,8 +692,15 @@ nav {
   @media (min-width: 992px) {
     .footerLinkWrap {
       text-align: right; } }
-  .footerLinkWrap a {
-    padding: 20px 0 20px 0; }
+  @media (max-width: 600px) {
+    .footerLinkWrap a {
+      padding: 20px 0 20px 0; } }
+  @media (min-width: 600px) {
+    .footerLinkWrap a {
+      padding: 20px 0 20px 0; } }
+  @media (min-width: 768px) {
+    .footerLinkWrap a {
+      padding: 5px 0 5px 0; } }
 
 .footerLink {
   position: relative;
@@ -838,7 +845,7 @@ optgroup,
 textarea {
   color: #020101;
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {

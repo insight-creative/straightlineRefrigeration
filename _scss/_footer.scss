@@ -79,7 +79,15 @@
 			text-align: right;
 		}
 		a{
-			padding: 20px 0 20px 0;
+				@include breakpoint(smallScreen){
+					padding: 20px 0 20px 0;
+				}
+				@include breakpoint(largeMobileScreen){
+					padding: 20px 0 20px 0;
+				}
+				@include breakpoint(tabletScreen){
+					padding: 5px 0 5px 0;
+				}
 		}
 }
 .footerLink{
