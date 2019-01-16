@@ -3,8 +3,17 @@
   background-image: url("../img/TeamPic01.04.19Cropped.jpg");
 }
 #contactWrap{
-  border: 2px solid #e6e6e6;
-  padding: 20px;
+  @include breakpoint(smallScreen){
+    display: none;
+  }
+  @include breakpoint(largeMobileScreen){
+    display: none;
+  }
+  @include breakpoint(tabletScreen){
+    display: block;
+    border: 2px solid #e6e6e6;
+    padding: 20px;
+  }
 }
 #contactWrapEmail{
   font-size: 16px;
@@ -21,11 +30,17 @@
 .ownerName{
   margin-top: 20px !important;
 }
-.smallItem{
-  font-size: 14px;
+.listHeader{
+  font-size: 22px;
+  color: $primaryColor;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 900;
 }
 .bottomHeading{
   align-items: flex-end !important;
+}
+.bioContainer{
+  display: flex;
+	text-align: center;
+	flex-direction: column;
 }

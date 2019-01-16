@@ -262,7 +262,7 @@ Template: Insight-Responsive
 
 .image {
   width: 100%;
-  height: 100%; }
+  height: auto; }
 
 .textBlock {
   padding: 0;
@@ -363,7 +363,7 @@ Template: Insight-Responsive
   display: none; }
 
 .siteLogo {
-  margin-top: 10px;
+  margin-top: 6px;
   height: auto;
   width: 250px; }
   @media (max-width: 600px) {
@@ -1099,30 +1099,12 @@ body {
     .homeHeading {
       padding: 50px; } }
 
-#homeHeroNav {
-  background: #0080c5;
-  padding: 20px 0 20px 0;
-  font-size: 26px;
-  font-weight: 600; }
-
 @media (max-width: 600px) {
   .heroHeading {
     padding: 20px; } }
 @media (min-width: 600px) {
   .heroHeading {
     padding: 25px; } }
-
-.homeNavLink {
-  padding: 30px 20px 30px 20px;
-  transition: .3s ease all;
-  text-decoration: none;
-  border: 2px solid rgba(0, 0, 0, 0); }
-  .homeNavLink:hover {
-    border: 2px solid #FFFFFF;
-    transition: .3s ease all; }
-
-.workWrap {
-  width: 100%; }
 
 .serviceImage {
   width: 100%;
@@ -1142,7 +1124,8 @@ body {
     .serviceImage {
       width: 100%;
       height: 100%;
-      padding: 20px; } }
+      padding: 20px;
+      margin-bottom: 0; } }
   .serviceImage a {
     text-decoration: none; }
   .serviceImage:hover .featureOverlay {
@@ -1181,26 +1164,6 @@ body {
   background-image: url("../img/maze-black.png");
   background-position: center center;
   height: 400px; }
-
-#homeButtonIcon {
-  margin-left: 20px; }
-
-.introWrap {
-  padding: 50px 20px 50px 20px; }
-
-.introText {
-  padding: 200px 20px 50px 20px;
-  width: 60%;
-  margin: 0 auto; }
-
-#workButton {
-  margin-top: 50px; }
-
-.spacer {
-  margin-top: 100px; }
-
-#serviceDesc {
-  padding-bottom: 50px; }
 
 .overlayWrap {
   position: relative;
@@ -1285,18 +1248,6 @@ body {
   border: 2px solid #0080c5;
   transform: translateZ(50px); }
 
-#lrgFeaturedWorkImage {
-  text-align: center;
-  display: flex;
-  align-items: center; }
-
-.workWrap {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  width: 90%;
-  margin: 0 auto; }
-
 #services a {
   text-decoration: none; }
 
@@ -1342,9 +1293,17 @@ body {
 .teamHero {
   background-image: url("../img/TeamPic01.04.19Cropped.jpg"); }
 
-#contactWrap {
-  border: 2px solid #e6e6e6;
-  padding: 20px; }
+@media (max-width: 600px) {
+  #contactWrap {
+    display: none; } }
+@media (min-width: 600px) {
+  #contactWrap {
+    display: none; } }
+@media (min-width: 768px) {
+  #contactWrap {
+    display: block;
+    border: 2px solid #e6e6e6;
+    padding: 20px; } }
 
 #contactWrapEmail {
   font-size: 16px; }
@@ -1361,13 +1320,19 @@ body {
 .ownerName {
   margin-top: 20px !important; }
 
-.smallItem {
-  font-size: 14px;
+.listHeader {
+  font-size: 22px;
+  color: #0080c5;
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: 900; }
 
 .bottomHeading {
   align-items: flex-end !important; }
+
+.bioContainer {
+  display: flex;
+  text-align: center;
+  flex-direction: column; }
 
 /* 12.0 Who-We-Service Page Styling --------------------------------------- */
 .iconWrap {
@@ -1505,12 +1470,18 @@ body {
     width: 95%; } }
 @media (min-width: 600px) {
   .projectsIntro {
-    width: 95%; } }
+    width: 95%;
+    margin: 0 auto; } }
 @media (min-width: 768px) {
   .projectsIntro {
-    width: 70%; } }
+    width: 70%;
+    margin: 0 auto; } }
 @media (min-width: 1250px) {
   .projectsIntro {
     width: 50%; } }
+
+.projectLinkWrap {
+  width: 35%;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=main.css.map */

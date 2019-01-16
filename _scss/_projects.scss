@@ -25,11 +25,17 @@
   }
   @include breakpoint(largeMobileScreen){
     width: 95%;
+    margin: 0 auto;
   }
   @include breakpoint(tabletScreen){
     width: 70%;
+    margin: 0 auto;
   }
   @include breakpoint(largeScreen){
     width: 50%;
   }
+}
+.projectLinkWrap{
+  width:35%;
+  margin: 0 auto;
 }

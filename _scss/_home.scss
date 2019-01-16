@@ -84,12 +84,6 @@
     padding: 50px;
   }
 }
-#homeHeroNav{
-	background: $primaryColor;
-	padding: 20px 0 20px 0;
-	font-size: 26px;
-	font-weight: 600;
-}
 .heroHeading{
     @include breakpoint(smallScreen){
       padding: 20px;
@@ -97,19 +91,6 @@
     @include breakpoint(largeMobileScreen){
       padding: 25px;
     }
-}
-.homeNavLink{
-	padding: 30px 20px 30px 20px;
-	transition: .3s ease all;
-	text-decoration: none;
-	border: 2px solid $transparent;
-    &:hover{
-      border: 2px solid $white;
-		  transition: .3s ease all;
-    }
-}
-.workWrap{
-	width: 100%;
 }
 .serviceImage{
   width: 100%;
@@ -129,6 +110,7 @@
       width: 100%;
       height: 100%;
       padding: 20px;
+			margin-bottom: 0;
     }
       a{
         text-decoration: none;
@@ -175,26 +157,6 @@
 	//background-image: url("../img/dust_scratches.png");
 	background-position: center center;
 	height: 400px;
-}
-#homeButtonIcon{
-	margin-left: 20px;
-}
-.introWrap{
-	padding: 50px 20px 50px 20px;
-}
-.introText{
-	padding: 200px 20px 50px 20px;
-	width: 60%;
-	margin:0 auto;
-}
-#workButton{
-	margin-top: 50px;
-}
-.spacer{
-	margin-top: 100px;
-}
-#serviceDesc{
-	padding-bottom: 50px;
 }
 .overlayWrap{
 	position: relative;
@@ -280,18 +242,6 @@
 	transition: .3s ease all;
 	border: 2px solid $primaryColor;
 	transform: translateZ(50px);
-}
-#lrgFeaturedWorkImage{
-	text-align: center;
-	display: flex;
-	align-items: center;
-}
-.workWrap{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	width: 90%;
-	margin: 0 auto;
 }
 #services a{
 	text-decoration: none;
