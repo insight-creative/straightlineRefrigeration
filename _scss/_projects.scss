@@ -22,6 +22,7 @@
 .projectsIntro{
   @include breakpoint(smallScreen){
     width: 95%;
+    margin: 0 auto;
   }
   @include breakpoint(largeMobileScreen){
     width: 95%;

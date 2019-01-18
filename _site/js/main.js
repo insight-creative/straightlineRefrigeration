@@ -414,6 +414,13 @@ $(function() {
     });
 });
 
+// close our sites mobile menu when the logo is clicked
+$(function() {
+    $("#mobileMenuLogo").click(function(e){
+        	$(".menu").removeClass("open");
+    });
+});
+
 // smooth scroll to elements in inner services nav
 $(document).on('click', 'a[href^="#container"]', function (event) {
     event.preventDefault();
