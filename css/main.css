@@ -290,8 +290,15 @@ Template: Insight-Responsive
   margin-top: 50vh;
   background: #FFFFFF; }
 
-.smallPaddedSection {
-  padding: 50px 0 50px 0; }
+@media (max-width: 600px) {
+  .smallPaddedSection {
+    padding: 25px 0 25px 0; } }
+@media (min-width: 600px) {
+  .smallPaddedSection {
+    padding: 25px 0 25px 0; } }
+@media (min-width: 992px) {
+  .smallPaddedSection {
+    padding: 50px 0 50px 0; } }
 
 .paddedSection {
   padding: 100px 0 100px 0; }
