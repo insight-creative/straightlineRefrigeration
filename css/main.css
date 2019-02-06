@@ -533,12 +533,12 @@ nav {
       font-size: 20px;
       font-weight: 600; } }
   .linkList2 a {
-    color: #0080c5;
+    color: #232323;
     text-decoration: none;
     transition: .3s ease all; }
-  .linkList2:hover {
-    color: #004e79;
-    transition: .3s ease all; }
+    .linkList2 a:hover {
+      color: #0080c5;
+      transition: .3s ease all; }
 
 .menuButtonWrap {
   display: flex;
