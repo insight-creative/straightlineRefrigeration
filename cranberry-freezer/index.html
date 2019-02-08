@@ -3,7 +3,7 @@ layout: default
 title: Custom Cranberry Freezer | Custom Industrial Refrigeration Systems, Appleton, WI
 description: With years of ammonia experience, Straightline Refrigeration offers expert custom design, building, and installation of industrial refrigeration systems.
 ---
-		<div class="content-area">
+		<div id="main-content" class="content-area">
 
 			<main class="site-main">
 
@@ -116,7 +116,14 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 										<h3 id="CADHeader" class="primaryText centerText">CAD Drawings</h3>
 
-										<img src="/img/projects/100.jpg" class="image">
+										<img
+											srcset="/img/projects/100v2-400.jpg 400w,
+											 /img/projects/100v2-600.jpg 600w,
+											 /img/projects/100v2-800.jpg 800w,
+											 /img/projects/100v2-1200.jpg 1200w,
+											 /img/projects/100v2-1500.jpg 1500w"
+											 data-src="/img/projects/100v2-1500.jpg"
+											 class="image lazyload" alt="Straightline Refrigeration CAD Drawing">
 
 									</div>
 
@@ -130,7 +137,14 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 									<div class="col70 projectGalleryImage">
 
-										<img src="/img/projects/101.jpg" class="image">
+										<img
+											srcset="/img/projects/101v2-400.jpg 400w,
+											 /img/projects/101v2-600.jpg 600w,
+											 /img/projects/101v2-800.jpg 800w,
+											 /img/projects/101v2-1200.jpg 1200w,
+											 /img/projects/101v2-1500.jpg 1500w"
+											 data-src="/img/projects/101v2-1500.jpg"
+											 class="image lazyload" alt="Straightline Refrigeration CAD Drawing">
 
 									</div>
 
@@ -138,7 +152,7 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 							</div>
 
-							<div class="fullWidth greyBlock">
+							<!--<div class="fullWidth greyBlock">
 
 								<div class="pageWidth flex-container">
 
@@ -150,6 +164,26 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 								</div>
 
+							</div>-->
+
+							<div class="fullWidth greyBlock">
+
+								<div class="pageWidth flex-container">
+
+									<div class="col50 projectGalleryImage">
+
+										<img data-src="/img/projects/IMG_3555.jpg" class="image lazyload">
+
+									</div>
+
+									<div class="col50 projectGalleryImage">
+
+										<img data-src="/img/projects/IMG_0009.jpg" class="image lazyload">
+
+									</div>
+
+								</div>
+
 							</div>
 
 							<div class="fullWidth whiteBlock">
@@ -158,13 +192,13 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 									<div class="col50 projectGalleryImage">
 
-										<img src="/img/projects/IMG_3555.jpg" class="image">
+										<img data-src="/img/projects/guysWorkingInShop.jpg" class="image lazyload">
 
 									</div>
 
 									<div class="col50 projectGalleryImage">
 
-										<img src="/img/projects/IMG_0009.jpg" class="image">
+										<img data-src="/img/projects/pipingBeingBuiltInShop.jpg" class="image lazyload">
 
 									</div>
 
@@ -178,13 +212,13 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 									<div class="col50 projectGalleryImage">
 
-										<img src="/img/projects/guysWorkingInShop.jpg" class="image">
+										<img data-src="/img/projects/IMG_0012.jpg" class="image lazyload">
 
 									</div>
 
 									<div class="col50 projectGalleryImage">
 
-										<img src="/img/projects/pipingBeingBuiltInShop.jpg" class="image">
+										<img data-src="/img/projects/IMG_0030.jpg" class="image lazyload">
 
 									</div>
 
@@ -198,13 +232,13 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 									<div class="col50 projectGalleryImage">
 
-										<img src="/img/projects/IMG_0012.jpg" class="image">
+										<img data-src="/img/projects/IMG_4223.jpg" class="image lazyload">
 
 									</div>
 
 									<div class="col50 projectGalleryImage">
 
-										<img src="/img/projects/IMG_0030.jpg" class="image">
+										<img data-src="/img/projects/2.jpg" class="image lazyload">
 
 									</div>
 
@@ -218,33 +252,13 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 									<div class="col50 projectGalleryImage">
 
-										<img src="/img/projects/IMG_4223.jpg" class="image">
+										<img data-src="/img/projects/IMG_5208.jpg" class="image lazyload">
 
 									</div>
 
 									<div class="col50 projectGalleryImage">
 
-										<img src="/img/projects/2.jpg" class="image">
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="fullWidth whiteBlock">
-
-								<div class="pageWidth flex-container">
-
-									<div class="col50 projectGalleryImage">
-
-										<img src="/img/projects/IMG_5208.jpg" class="image">
-
-									</div>
-
-									<div class="col50 projectGalleryImage">
-
-										<img src="/img/projects/IMG_4084.jpg" class="image">
+										<img data-src="/img/projects/IMG_4084.jpg" class="image lazyload">
 
 									</div>
 
@@ -266,7 +280,7 @@ description: With years of ammonia experience, Straightline Refrigeration offers
 
 										<div class="centeredButton">
 
-											<a href="{{ site.baseurl }}/contact/" aria-label="Link to the straightline refrigeration contact page"><button class="whiteButton">Contact Us</button></a>
+											<a href="{{ site.baseurl }}/contact/" class="whiteButton" aria-label="Link to the straightline refrigeration contact page">Contact Us</a>
 
 										</div>
 

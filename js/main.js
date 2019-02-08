@@ -421,10 +421,17 @@ $(function() {
     });
 });
 
-// smooth scroll to elements in inner services nav
-$(document).on('click', 'a[href^="#container"]', function (event) {
-    event.preventDefault();
-    $('html, body').animate({
-      scrollTop: $($.attr(this, 'href')).offset().top
-     }, 1500);
-});
+// Test via a getter in the options object to see if the passive property is accessed
+var supportsPassive = false;
+try {
+  var opts = Object.defineProperty({}, 'passive', {
+    get: function() {
+      supportsPassive = true;
+    }
+  });
+  window.addEventListener("testPassive", null, opts);
+  window.removeEventListener("testPassive", null, opts);
+} catch (e) {}
+
+// Use our detect's results. passive applied if supported, capture will be false either way.
+elem.addEventListener('touchstart', fn, supportsPassive ? { passive: true } : false); 

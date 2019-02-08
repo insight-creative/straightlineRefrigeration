@@ -378,10 +378,6 @@ Template: Insight-Responsive
       width: 125px; } }
 
 nav {
-  display: flex;
-  align-items: center;
-  height: 70px;
-  justify-content: space-between;
   width: 100%; }
 
 .menuText {
@@ -442,11 +438,10 @@ nav {
       padding: 0;
       margin-top: 30px; }
       .linkWrap a {
-        color: #0080c5;
+        color: #232323;
         text-decoration: none; }
       .linkWrap li {
         list-style-type: none;
-        margin-top: 25px;
         font-size: 1.414em;
         border-bottom: 1px solid #F6F6F6;
         display: flex;
@@ -832,6 +827,9 @@ nav {
 #siteAuthorLink:hover {
   color: #004e79; }
 
+.noStyle {
+  font-style: normal; }
+
 /* 6.0 Site Typography -------------------------------------------*/
 body,
 button,
@@ -905,12 +903,14 @@ h6 {
 .primaryButton {
   position: relative;
   z-index: 1;
+  width: fit-content;
   border: 2px solid #0080c5 !important;
   border-radius: 30px !important;
   background: #0080c5 !important;
   padding: 10px 50px 10px 50px !important;
   color: #FFFFFF !important;
   text-shadow: 0 1px 1px black !important;
+  text-decoration: none;
   margin-bottom: 10px !important;
   transition: .3s ease all !important;
   box-shadow: 1px 2px 10px rgba(42, 42, 42, 0.6) !important;
@@ -923,12 +923,14 @@ h6 {
 .primaryButtonReverse {
   position: relative;
   z-index: 1;
+  width: fit-content;
   border: 2px solid #0080c5;
   border-radius: 30px;
   padding: 10px 50px 10px 50px;
   color: #0080c5;
   margin-bottom: 10px;
   transition: .3s ease all;
+  text-decoration: none;
   cursor: pointer; }
   .primaryButtonReverse:hover {
     background: #0080c5;
@@ -949,10 +951,12 @@ h6 {
 .whiteButton {
   position: relative;
   z-index: 1;
+  width: fit-content;
   border: 2px solid #FFFFFF;
   border-radius: 30px;
   background: #FFFFFF;
   padding: 10px 50px 10px 50px;
+  text-decoration: none;
   color: #0080c5;
   transition: .3s ease all;
   cursor: pointer;
@@ -1007,6 +1011,20 @@ body {
 .iconBlock {
   display: flex;
   flex-direction: column; }
+
+.smallIcon {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden; }
+
+.icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  stroke-width: 0;
+  stroke: #FFFFFF;
+  fill: #FFFFFF; }
 
 /* 10.0 Homepage stylings -------------------------------------------*/
 #homeHero {
@@ -1327,6 +1345,9 @@ body {
   display: flex;
   text-align: center;
   flex-direction: column; }
+
+.leftAlignText {
+  text-align: left; }
 
 /* 12.0 Who-We-Service Page Styling --------------------------------------- */
 .iconWrap {
