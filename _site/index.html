@@ -15,13 +15,17 @@
   <!-- CSS (Bootstrap is loaded via a content delivery network) -->
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
   <!-- Our custom stylesheet -->
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/css/main.min.css">
+  
+  <link rel="stylesheet" href="/css/main.min.css">
 
   <!-- Formalize stylesheet -->
-  <link rel="stylesheet" href="/css/formalize.css">
+  <link rel="stylesheet" href="/css/formalize.min.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans" rel="stylesheet">
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans" rel="stlyesheet">
 
   <!-- Icons -->
   <!--<link href="/img/logos/logoWhiteMedium.png" rel="shortcut icon">-->
@@ -284,7 +288,14 @@
 
 								<div class="col50">
 
-									<img data-src="/img/straightlineRefrigerationShop.jpg" class="image lazyload">
+									<img
+									srcset="/img/straightlineRefrigerationShop-400.jpg 400w,
+									 /img/straightlineRefrigerationShop-600.jpg 600w,
+									 /img/straightlineRefrigerationShop-800.jpg 800w,
+									 /img/straightlineRefrigerationShop-1000.jpg 1000w,
+									 /img/straightlineRefrigerationShop-1200.jpg 1200w"
+									 data-src="/img/straightlineRefrigerationShop.jpg" class="image lazyload"
+									 alt="Straightline Refrigerations team working on custom fabrication projects in shop">
 
 								</div>
 
@@ -302,7 +313,7 @@
 
 										<h2 class="whiteText">Custom Cranberry Freezer</h2>
 
-										<p class="whiteText">This custom freezer can hold—and help preserve millions of pounds of cranberries.</p>
+										<p class="whiteText">This custom freezer can hold—and help preserve—millions of pounds of cranberries.</p>
 
 										<a href="/cranberry-freezer/" class="centerButton whiteButton" aria-label="Learn more about the cranberry freezer project">View Project</a>
 
@@ -320,7 +331,14 @@
 
 								<div class="col50">
 
-									<img data-src="/img/TeamPic01.04.19_RET_CROP.jpg" class="image lazyload">
+									<img
+									srcset="/img/straightlineRefrigerationTeam-400.jpg 400w,
+									 /img/straightlineRefrigerationTeam-600.jpg 600w,
+									 /img/straightlineRefrigerationTeam-800.jpg 800w,
+									 /img/straightlineRefrigerationTeam-1000.jpg 1000w,
+									 /img/straightlineRefrigerationTeam-1200.jpg 1200w"
+									 data-src="/img/straightlineRefrigerationTeam-2.jpg" class="image lazyload"
+									 alt="Straightline Refrigerations team full team standing in from of Appleton office">
 
 								</div>
 
@@ -366,7 +384,9 @@
 
 											<div class="overlayWrap">
 
-												<img class="blockImage lazyload" data-src="/img/serviceIndustry7.jpg">
+												<img
+												 data-src="/img/dairyServiceIndustry-800.jpg" class="blockImage lazyload"
+												 alt="Straightline Refrigerations welder working on a custom fabricated cooling system for dairy project">
 
 												<div class="serviceTitle">
 
@@ -390,7 +410,8 @@
 
 											<div class="overlayWrap">
 
-												<img class="blockImage lazyload" data-src="/img/serviceIndustry8.jpg">
+												<img class="blockImage lazyload" data-src="/img/FoodProcessingServiceIndustry-800.jpg"
+												alt="Straightline Refrigeration workers lowering down a large compressor motor onto rooftop with crane">
 
 												<div class="serviceTitle">
 
@@ -414,7 +435,8 @@
 
 											<div class="overlayWrap">
 
-												<img class="blockImage lazyload" data-src="/img/serviceIndustry4.jpg">
+												<img class="blockImage lazyload" data-src="/img/ColdStorageServiceIndustry-800.jpg"
+												alt="Straightline refrigeration working on a custom rooftop refrigeration installation">
 
 												<div class="serviceTitle">
 
@@ -456,7 +478,8 @@
 
 												<div class="logoWrap">
 
-													<img data-src="/img/logos/IIAR_logo_swoosh_small.png" class="certLogo lazyload">
+													<img src="/img/logos/IIAR_logo_swoosh_small.png" class="certLogo"
+													alt="iiar organization logo">
 
 												</div>
 
@@ -466,7 +489,8 @@
 
 												<div class="logoWrap">
 
-													<img data-src="/img/logos/pipeWeldingBeureauTransparent.png" class="certLogo lazyload">
+													<img src="/img/logos/pipeWeldingBeureauTransparent.png" class="certLogo"
+													alt="Pipe Welding Bereau organization logo">
 
 												</div>
 
@@ -476,7 +500,8 @@
 
 												<div class="logoWrap">
 
-													<img data-src="/img/logos/ISN_WebFriendlyBadge.png" class="certLogo lazyload">
+													<img src="/img/logos/ISN_WebFriendlyBadge.png" class="certLogo"
+													alt="isn organization logo">
 
 												</div>
 
@@ -486,7 +511,8 @@
 
 												<div class="logoWrap">
 
-													<img data-src="/img/logos/ua-logo-transparent2.png" class="certLogo lazyload">
+													<img src="/img/logos/ua-logo-transparent2.png" class="certLogo"
+													alt="UA organization logo">
 
 												</div>
 
@@ -496,7 +522,8 @@
 
 												<div class="logoWrap">
 
-													<img data-src="/img/logos/MCAA.png" class="certLogo lazyload">
+													<img src="/img/logos/MCAA.png" class="certLogo"
+													alt="MCAA organization logo">
 
 												</div>
 
@@ -663,14 +690,14 @@
     </div>
 
 	<!--  Script for barba.js  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript" async></script>
 
   <!-- Script for lazysizes lazy loading images -->
-  <script src="/js/lazysizes.min.js" async></script>
+  <script src="/js/lazysizes.min.js"></script>
 
-  <script src="/js/main.js" type="text/javascript"></script>
+  <script src="/js/main.min.js" type="text/javascript" async></script>
 
-  <script src="/js/jquery.formalize.js" type="text/javascript"></script>
+  <script src="/js/jquery.formalize.min.js" type="text/javascript" async></script>
 
 </footer>
 

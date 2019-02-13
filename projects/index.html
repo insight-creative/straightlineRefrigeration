@@ -9,9 +9,9 @@ description: Browse our Project Gallery to learn about our custom refrigeration 
 
 				<section id="straightline">
 
-					<div id="homeHero" class="hero" aria-label="[Custom refrigeration build by Straightline Refrigeration]">
+					<div id="homeHero" class="mediumHero" aria-label="[Custom refrigeration build by Straightline Refrigeration]">
 
-						<div class="heroOverlay">
+						<div class="mediumHeroOverlay">
 
 							<div class="heroHeadingWrap fullWidth bottomHeading">
 
@@ -79,7 +79,14 @@ description: Browse our Project Gallery to learn about our custom refrigeration 
 
 												<div class="overlayWrap" data-tilt data-tilt-max="20" data-tilt-speed="400" data-tilt-perspective="2000">
 
-													<img class="blockImage lazyload" data-src="{{site.baseurl}}/img/projects/designBuildFeaturedProjectSmall.jpg">
+													<img
+													srcset="/img/projects/designBuildFeaturedProjectSmall-400.jpg 400w,
+													 /img/projects/designBuildFeaturedProjectSmall-600.jpg 600w,
+													 /img/projects/designBuildFeaturedProjectSmall-800.jpg 800w,
+													 /img/projects/designBuildFeaturedProjectSmall-1000.jpg 1000w,
+													 /img/projects/designBuildFeaturedProjectSmall.jpg 1200w"
+													 data-src="/img/projects/designBuildFeaturedProjectSmall.jpg" class="blockImage lazyload"
+													 alt="Custom Fabrication made by Straightline Refrigeration">
 
 													<div class="serviceTitle">
 
@@ -102,7 +109,7 @@ description: Browse our Project Gallery to learn about our custom refrigeration 
 											<div class="descWrap">
 
 	                      <p>
-													This custom freezer can hold—and help preserve millions of pounds of cranberries.
+													This custom freezer can hold—and help preserve—millions of pounds of cranberries.
 	                      </p>
 
 	                      <div class="centeredButton">

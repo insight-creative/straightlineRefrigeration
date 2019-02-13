@@ -1,12 +1,4 @@
 /* 7.0 Button Stylings ---------------------------------------*/
-.redLink{
-  color: $primaryColor !important;
-	transition: .3s ease all;
-    &:hover{
-      transition: .3s ease all;
-    	color: #1d1d1d !important;
-    }
-}
 .primaryButton{
 	position: relative;
 	z-index:1;
@@ -45,17 +37,6 @@
     	transition: .3s ease all;
     	color: $white;
     }
-}
-.plainRedButton{
-	position: relative;
-	z-index:1;
-	border: 2px solid $primaryColor;
-	background: $primaryColor;
-	padding: 10px 50px 10px 50px;
-	color: $white;
-	margin-bottom: 10px;
-	transition: .3s ease all;
-	cursor: pointer;
 }
 .whiteButton{
 	position: relative;

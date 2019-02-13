@@ -52,14 +52,6 @@
 				font-size: 12px;
 			}
 }
-#faqLink{
-	@include breakpoint(tabletScreen){
-		display: block;
-	}
-	@include breakpoint(smallScreen){
-		display: none;
-	}
-}
 .site-content{
 	margin-top: 35px;
 }
@@ -255,72 +247,6 @@ nav{
 .menuButtonWrap{
 	display:flex;
 	right: 30px;
-		@include breakpoint(laptopScreen){
-			display: none;
-		}
-}
-.heroNav{
-	display: block;
-	background: #1D1D1D;
-	padding: 50px 0 50px 0;
-	margin-top: -100px;
-		@include breakpoint(smallScreen){
-			display: none;
-		}
-		@include breakpoint(largeMobileScreen){
-			display: none;
-		}
-		@include breakpoint(laptopScreen){
-			display: block;
-		}
-}
-.heroNavWrap{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-		@include breakpoint(smallScreen){
-			flex-direction: column;
-			justify-content: center;
-		}
-		@include breakpoint(largeMobileScreen){
-			flex-direction: column;
-			justify-content: center;
-		}
-		@include breakpoint(laptopScreen){
-			flex-direction: row;
-			justify-content: space-between;
-		}
-		li{
-			list-style-type: none;
-				@include breakpoint(smallScreen){
-					margin: 5px 0 5px 0;
-				}
-		}
-}
-.heroNavLink{
-	color: #fff;
-	text-decoration: none;
-	transition: .3s ease all;
-	padding: 5px 0 5px 0;
-		@include breakpoint(smallScreen){
-			color: #3598db;
-		}
-		&:hover{
-			color: $primaryColor;
-			transition: .3s ease all;
-		}
-}
-.mobileHeroNav{
-	display: none;
-		@include breakpoint(smallScreen){
-			background: $secondaryColor;
-			padding: 20px 0 20px 0;
-		}
-		@include breakpoint(largeMobileScreen){
-			background: $secondaryColor;
-			padding: 20px 0 20px 0;
-		}
 		@include breakpoint(laptopScreen){
 			display: none;
 		}

@@ -12,13 +12,17 @@
   <!-- CSS (Bootstrap is loaded via a content delivery network) -->
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
   <!-- Our custom stylesheet -->
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/css/main.min.css">
+  
+  <link rel="stylesheet" href="/css/main.min.css">
 
   <!-- Formalize stylesheet -->
-  <link rel="stylesheet" href="/css/formalize.css">
+  <link rel="stylesheet" href="/css/formalize.min.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans" rel="stylesheet">
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans" rel="stlyesheet">
 
   <!-- Icons -->
   <!--<link href="/img/logos/logoWhiteMedium.png" rel="shortcut icon">-->

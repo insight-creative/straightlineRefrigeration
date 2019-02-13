@@ -103,24 +103,6 @@
 .fullWidth{
   width: 100%;
 }
-.contentBlock{
-  	width: 70%;
-    @include breakpoint(smallScreen){
-      width: 90%;
-      margin: 0 auto;
-		  height: auto;
-      padding: 50px 20px 50px 20px;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 90%;
-      margin: 0 auto;
-		  height: auto;
-      padding: 50px 20px 50px 20px;
-    }
-    @include breakpoint(laptopScreen){
-      width: 70%;
-    }
-  }
 .blockText{
 	padding: 50px;
 	display: flex;
@@ -193,6 +175,25 @@
     height: 90vh;
   }
 }
+.mediumHero{
+	position: relative;
+	z-index: 1;
+	height: 50vh;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	}
+.mediumHeroOverlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 50vh;
+  width: 100%;
+  content: "";
+	background: rgba(0,0,0,.3);
+}
 .flex-container{
 	display: flex;
 	flex-direction: row;
@@ -240,17 +241,11 @@
       margin: 0 auto;
     }
 }
-.blockWrap{
-	display: flex;
-	margin-bottom: 100px;
-}
 .blockImage{
 	display: flex;
 	max-width:100%;
 	max-height: 100%;
-}
-.imageBlock{
-	padding: 100px 0 100px 0;
+	margin: 10px 0;
 }
 .image{
 	width: 100%;

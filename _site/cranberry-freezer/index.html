@@ -15,13 +15,17 @@
   <!-- CSS (Bootstrap is loaded via a content delivery network) -->
   <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">-->
   <!-- Our custom stylesheet -->
-  <link rel="stylesheet" href="/css/main.css">
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="/css/main.min.css">
+  
+  <link rel="stylesheet" href="/css/main.min.css">
 
   <!-- Formalize stylesheet -->
-  <link rel="stylesheet" href="/css/formalize.css">
+  <link rel="stylesheet" href="/css/formalize.min.css">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans" rel="stylesheet">
+  <link rel="preload" as="style" onload="this.rel = 'stylesheet'" href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans">
+
+  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Open+Sans" rel="stlyesheet">
 
   <!-- Icons -->
   <!--<link href="/img/logos/logoWhiteMedium.png" rel="shortcut icon">-->
@@ -224,11 +228,18 @@
 
 						<h1 class="primaryText centerText">Custom Cranberry Freezer</h1>
 
-							<p class="centerText">This custom freezer can hold—and help preserve millions of pounds of cranberries.</p>
+							<p class="centerText">This custom freezer can hold—and help preserve—millions of pounds of cranberries.</p>
 
 							<div class="col50 centeredProjectImage primaryProjectImage">
 
-								<img src="/img/projects/designBuildFeaturedProjectMedium.jpg" class="image">
+								<img
+								srcset="/img/projects/designBuildFeaturedProjectMedium-400.jpg 400w,
+								 /img/projects/designBuildFeaturedProjectMedium-600.jpg 600w,
+								 /img/projects/designBuildFeaturedProjectMedium-800.jpg 800w,
+								 /img/projects/designBuildFeaturedProjectMedium-1000.jpg 1000w,
+								 /img/projects/designBuildFeaturedProjectMedium.jpg 1200w"
+								 data-src="/img/projects/designBuildFeaturedProjectMedium.jpg" class="blockImage lazyload"
+								 alt="Custom Fabricated Refrigeration system made by Straightline Refrigeration">
 
 							</div>
 
@@ -286,7 +297,7 @@
 
 										<ul>
 
-											<li>175,000 sq. feet, holding up to 3 million pounds of cranberries</li>
+											<li>175,000 sq. feet, holding millions of pounds of cranberries</li>
 
 											<li>Customized evaporators to increase cooling and reduce defrost times</li>
 
@@ -383,53 +394,27 @@
 
 									<div class="col50 projectGalleryImage">
 
-										<img data-src="/img/projects/IMG_3555.jpg" class="image lazyload">
+										<img
+										srcset="/img/projects/straightlineRefrigerationProjectStartFrameUp-400.jpg 400w,
+										 /img/projects/straightlineRefrigerationProjectStartFrameUp-600.jpg 600w,
+										 /img/projects/straightlineRefrigerationProjectStartFrameUp-800.jpg 800w,
+										 /img/projects/straightlineRefrigerationProjectStartFrameUp.jpg 1000w,
+										 /img/projects/straightlineRefrigerationProjectStartFrameUp.jpg 1200w"
+										 data-src="/img/projects/straightlineRefrigerationProjectStartFrameUp.jpg" class="blockImage lazyload"
+										 alt="Cranberry Storage facility by Straightline Refrigeration">
 
 									</div>
 
 									<div class="col50 projectGalleryImage">
 
-										<img data-src="/img/projects/IMG_0009.jpg" class="image lazyload">
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="fullWidth whiteBlock">
-
-								<div class="pageWidth flex-container">
-
-									<div class="col50 projectGalleryImage">
-
-										<img data-src="/img/projects/guysWorkingInShop.jpg" class="image lazyload">
-
-									</div>
-
-									<div class="col50 projectGalleryImage">
-
-										<img data-src="/img/projects/pipingBeingBuiltInShop.jpg" class="image lazyload">
-
-									</div>
-
-								</div>
-
-							</div>
-
-							<div class="fullWidth greyBlock">
-
-								<div class="pageWidth flex-container">
-
-									<div class="col50 projectGalleryImage">
-
-										<img data-src="/img/projects/IMG_0012.jpg" class="image lazyload">
-
-									</div>
-
-									<div class="col50 projectGalleryImage">
-
-										<img data-src="/img/projects/IMG_0030.jpg" class="image lazyload">
+										<img
+										srcset="/img/projects/cranberryStorageCustomHoses-400.jpg 400w,
+										 /img/projects/cranberryStorageCustomHoses-600.jpg 600w,
+										 /img/projects/cranberryStorageCustomHoses-800.jpg 800w,
+										 /img/projects/cranberryStorageCustomHoses-1000.jpg 1000w,
+										 /img/projects/cranberryStorageCustomHoses-1200.jpg 1200w"
+										 data-src="/img/projects/cranberryStorageCustomHoses-1200.jpg" class="blockImage lazyload"
+										 alt="Cranberry Storage facility hoses installed by Straightline Refrigeration">
 
 									</div>
 
@@ -443,13 +428,27 @@
 
 									<div class="col50 projectGalleryImage">
 
-										<img data-src="/img/projects/IMG_4223.jpg" class="image lazyload">
+										<img
+										srcset="/img/projects/guysWorkingInShop-400.jpg 400w,
+										 /img/projects/guysWorkingInShop-600.jpg 600w,
+										 /img/projects/guysWorkingInShop-800.jpg 800w,
+										 /img/projects/guysWorkingInShop.jpg 1000w,
+										 /img/projects/guysWorkingInShop.jpg 1200w"
+										 data-src="/img/projects/guysWorkingInShop.jpg" class="blockImage lazyload"
+										 alt="Custom fabrication by Straightline Refrigeration">
 
 									</div>
 
 									<div class="col50 projectGalleryImage">
 
-										<img data-src="/img/projects/2.jpg" class="image lazyload">
+										<img
+										srcset="/img/projects/pipingBeingBuiltInShop-400.jpg 400w,
+										 /img/projects/pipingBeingBuiltInShop-600.jpg 600w,
+										 /img/projects/pipingBeingBuiltInShop-800.jpg 800w,
+										 /img/projects/pipingBeingBuiltInShop.jpg 1000w,
+										 /img/projects/pipingBeingBuiltInShop.jpg 1200w"
+										 data-src="/img/projects/pipingBeingBuiltInShop.jpg" class="blockImage lazyload"
+										 alt="Custom pipe fabrication by Straightline Refrigeration">
 
 									</div>
 
@@ -463,13 +462,95 @@
 
 									<div class="col50 projectGalleryImage">
 
-										<img data-src="/img/projects/IMG_5208.jpg" class="image lazyload">
+										<img
+										srcset="/img/projects/customFabricatedPipingAndValves-400.jpg 400w,
+										 /img/projects/customFabricatedPipingAndValves-600.jpg 600w,
+										 /img/projects/customFabricatedPipingAndValves-800.jpg 800w,
+										 /img/projects/customFabricatedPipingAndValves-1000.jpg 1000w,
+										 /img/projects/customFabricatedPipingAndValves-1200.jpg 1200w"
+										 data-src="/img/projects/customFabricatedPipingAndValves-1200.jpg" class="blockImage lazyload"
+										 alt="Custom pipe fabrication by Straightline Refrigeration">
 
 									</div>
 
 									<div class="col50 projectGalleryImage">
 
-										<img data-src="/img/projects/IMG_4084.jpg" class="image lazyload">
+										<img
+										srcset="/img/projects/customFabOutdoorPiping-400.jpg 400w,
+										 /img/projects/customFabOutdoorPiping-600.jpg 600w,
+										 /img/projects/customFabOutdoorPiping-800.jpg 800w,
+										 /img/projects/customFabOutdoorPiping-1000.jpg 1000w,
+										 /img/projects/customFabOutdoorPiping-1200.jpg 1200w"
+										 data-src="/img/projects/customFabOutdoorPiping-1200.jpg" class="blockImage lazyload"
+										 alt="Custom pipe fabrication by Straightline Refrigeration">
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="fullWidth whiteBlock">
+
+								<div class="pageWidth flex-container">
+
+									<div class="col50 projectGalleryImage">
+
+										<img
+										srcset="/img/projects/customFabricatedRooftopPiping-400.jpg 400w,
+										 /img/projects/customFabricatedRooftopPiping-600.jpg 600w,
+										 /img/projects/customFabricatedRooftopPiping-800.jpg 800w,
+										 /img/projects/customFabricatedRooftopPiping.jpg 1000w,
+										 /img/projects/customFabricatedRooftopPiping.jpg 1200w"
+										 data-src="/img/projects/customFabricatedRooftopPiping.jpg" class="blockImage lazyload"
+										 alt="Custom pipe fabrication by Straightline Refrigeration">
+
+									</div>
+
+									<div class="col50 projectGalleryImage">
+
+										<img
+										srcset="/img/projects/rooftopCoolingUnits-400.jpg 400w,
+										 /img/projects/rooftopCoolingUnits-600.jpg 600w,
+										 /img/projects/rooftopCoolingUnits-800.jpg 800w,
+										 /img/projects/rooftopCoolingUnits-1000.jpg 1000w,
+										 /img/projects/rooftopCoolingUnits-1200.jpg 1200w"
+										 data-src="/img/projects/rooftopCoolingUnits.jpg" class="blockImage lazyload"
+										 alt="Custom rooftop cooling units by Straightline Refrigeration">
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="fullWidth greyBlock">
+
+								<div class="pageWidth flex-container">
+
+									<div class="col50 projectGalleryImage">
+
+										<img
+										srcset="/img/projects/customRoofPiping-400.jpg 400w,
+										 /img/projects/customRoofPiping-600.jpg 600w,
+										 /img/projects/customRoofPiping-800.jpg 800w,
+										 /img/projects/customRoofPiping.jpg 1000w,
+										 /img/projects/customRoofPiping.jpg 1200w"
+										 data-src="/img/projects/customRoofPiping.jpg" class="blockImage lazyload"
+										 alt="Custom rooftop piping by Straightline Refrigeration">
+
+									</div>
+
+									<div class="col50 projectGalleryImage">
+
+										<img
+										srcset="/img/projects/rooftopUnitBeingInstalledByCrane-400.jpg 400w,
+										 /img/projects/rooftopUnitBeingInstalledByCrane-600.jpg 600w,
+										 /img/projects/rooftopUnitBeingInstalledByCrane-800.jpg 800w,
+										 /img/projects/rooftopUnitBeingInstalledByCrane.jpg 1000w,
+										 /img/projects/rooftopUnitBeingInstalledByCrane.jpg 1200w"
+										 data-src="/img/projects/rooftopUnitBeingInstalledByCrane.jpg" class="blockImage lazyload"
+										 alt="Custom rooftop piping by Straightline Refrigeration">
 
 									</div>
 
@@ -620,14 +701,14 @@
     </div>
 
 	<!--  Script for barba.js  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js" type="text/javascript" async></script>
 
   <!-- Script for lazysizes lazy loading images -->
-  <script src="/js/lazysizes.min.js" async></script>
+  <script src="/js/lazysizes.min.js"></script>
 
-  <script src="/js/main.js" type="text/javascript"></script>
+  <script src="/js/main.min.js" type="text/javascript" async></script>
 
-  <script src="/js/jquery.formalize.js" type="text/javascript"></script>
+  <script src="/js/jquery.formalize.min.js" type="text/javascript" async></script>
 
 </footer>
 

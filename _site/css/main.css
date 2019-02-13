@@ -111,24 +111,6 @@ Template: Insight-Responsive
 .fullWidth {
   width: 100%; }
 
-.contentBlock {
-  width: 70%; }
-  @media (max-width: 600px) {
-    .contentBlock {
-      width: 90%;
-      margin: 0 auto;
-      height: auto;
-      padding: 50px 20px 50px 20px; } }
-  @media (min-width: 600px) {
-    .contentBlock {
-      width: 90%;
-      margin: 0 auto;
-      height: auto;
-      padding: 50px 20px 50px 20px; } }
-  @media (min-width: 992px) {
-    .contentBlock {
-      width: 70%; } }
-
 .blockText {
   padding: 50px;
   display: flex;
@@ -201,6 +183,25 @@ Template: Insight-Responsive
     .heroOverlay {
       height: 90vh; } }
 
+.mediumHero {
+  position: relative;
+  z-index: 1;
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.mediumHeroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  height: 50vh;
+  width: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.3); }
+
 .flex-container {
   display: flex;
   flex-direction: row;
@@ -248,17 +249,11 @@ Template: Insight-Responsive
       width: 70%;
       margin: 0 auto; } }
 
-.blockWrap {
-  display: flex;
-  margin-bottom: 100px; }
-
 .blockImage {
   display: flex;
   max-width: 100%;
-  max-height: 100%; }
-
-.imageBlock {
-  padding: 100px 0 100px 0; }
+  max-height: 100%;
+  margin: 10px 0; }
 
 .image {
   width: 100%;
@@ -355,13 +350,6 @@ Template: Insight-Responsive
     .secondaryLink {
       padding: 0 10px 0 10px;
       font-size: 12px; } }
-
-@media (min-width: 768px) {
-  #faqLink {
-    display: block; } }
-@media (max-width: 600px) {
-  #faqLink {
-    display: none; } }
 
 .site-content {
   margin-top: 35px; }
@@ -542,87 +530,7 @@ nav {
     .menuButtonWrap {
       display: none; } }
 
-.heroNav {
-  display: block;
-  background: #1D1D1D;
-  padding: 50px 0 50px 0;
-  margin-top: -100px; }
-  @media (max-width: 600px) {
-    .heroNav {
-      display: none; } }
-  @media (min-width: 600px) {
-    .heroNav {
-      display: none; } }
-  @media (min-width: 992px) {
-    .heroNav {
-      display: block; } }
-
-.heroNavWrap {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center; }
-  @media (max-width: 600px) {
-    .heroNavWrap {
-      flex-direction: column;
-      justify-content: center; } }
-  @media (min-width: 600px) {
-    .heroNavWrap {
-      flex-direction: column;
-      justify-content: center; } }
-  @media (min-width: 992px) {
-    .heroNavWrap {
-      flex-direction: row;
-      justify-content: space-between; } }
-  .heroNavWrap li {
-    list-style-type: none; }
-    @media (max-width: 600px) {
-      .heroNavWrap li {
-        margin: 5px 0 5px 0; } }
-
-.heroNavLink {
-  color: #fff;
-  text-decoration: none;
-  transition: .3s ease all;
-  padding: 5px 0 5px 0; }
-  @media (max-width: 600px) {
-    .heroNavLink {
-      color: #3598db; } }
-  .heroNavLink:hover {
-    color: #0080c5;
-    transition: .3s ease all; }
-
-.mobileHeroNav {
-  display: none; }
-  @media (max-width: 600px) {
-    .mobileHeroNav {
-      background: #004e79;
-      padding: 20px 0 20px 0; } }
-  @media (min-width: 600px) {
-    .mobileHeroNav {
-      background: #004e79;
-      padding: 20px 0 20px 0; } }
-  @media (min-width: 992px) {
-    .mobileHeroNav {
-      display: none; } }
-
 /* 5.0 Footer Stylings -------------------------------------------*/
-.site-info {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: auto;
-  width: 100%;
-  text-align: center;
-  background: #FFFFFF;
-  list-style-type: none; }
-  @media (min-width: 992px) {
-    .site-info {
-      flex-direction: row;
-      height: 120px; } }
-
 .site-footer {
   position: relative;
   z-index: 2;
@@ -893,13 +801,6 @@ h6 {
     bottom: -20px; }
 
 /* 7.0 Button Stylings ---------------------------------------*/
-.redLink {
-  color: #0080c5 !important;
-  transition: .3s ease all; }
-  .redLink:hover {
-    transition: .3s ease all;
-    color: #1d1d1d !important; }
-
 .primaryButton {
   position: relative;
   z-index: 1;
@@ -936,17 +837,6 @@ h6 {
     background: #0080c5;
     transition: .3s ease all;
     color: #FFFFFF; }
-
-.plainRedButton {
-  position: relative;
-  z-index: 1;
-  border: 2px solid #0080c5;
-  background: #0080c5;
-  padding: 10px 50px 10px 50px;
-  color: #FFFFFF;
-  margin-bottom: 10px;
-  transition: .3s ease all;
-  cursor: pointer; }
 
 .whiteButton {
   position: relative;
@@ -997,20 +887,8 @@ body {
     transition: .3s ease all; }
 
 /*9.0 Icon Styling -------------------------------------------*/
-.whiteIcon {
-  color: #FFFFFF;
-  transition: .3s ease all;
-  font-size: 12px; }
-
-.greyIcon {
-  color: #F6F6F6; }
-
 .primaryIcon {
   color: #0080c5; }
-
-.iconBlock {
-  display: flex;
-  flex-direction: column; }
 
 .smallIcon {
   position: absolute;
