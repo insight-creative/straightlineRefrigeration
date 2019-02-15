@@ -5,7 +5,7 @@
 */
 
 // Module pattern:
-// http://yuiblog.com/blog/2007/06/12/module-pattern
+// https://yuiblog.com/blog/2007/06/12/module-pattern
 var FORMALIZE = (function($, window, document, undefined) {
   // Internet Explorer detection.
   function IE(version) {

@@ -44,7 +44,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.c = installedModules;
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "http://localhost:8080/dist";
+/******/ 	__webpack_require__.p = "https://localhost:8080/dist";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -374,7 +374,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	  nextTick(function onNextTick() {
 	    if (immediateIds[id]) {
 	      // fn.call() is faster so we optimize for the common use-case
-	      // @see http://jsperf.com/call-apply-segu
+	      // @see https://jsperf.com/call-apply-segu
 	      if (args) {
 	        fn.apply(null, args);
 	      } else {
@@ -745,7 +745,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    if (port != '')
 	      return parseInt(port);
 
-	    if (protocol === 'http:')
+	    if (protocol === 'https:')
 	      return 80;
 
 	    if (protocol === 'https:')

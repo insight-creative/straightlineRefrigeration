@@ -76,7 +76,7 @@ sass --watch \_scss/main.scss:css/main.css
 
 ## :runner: Runnin local Jekyll build
 
-Builds your site any time a source file changes and serves it locally at http://127.0.0.1:4000
+Builds your site any time a source file changes and serves it locally at https://127.0.0.1:4000
 
 ## Add a project
 
