@@ -23,6 +23,9 @@
   @include breakpoint(smallScreen){
     padding: 0;
   }
+  @include breakpoint(largeMobileScreen){
+    padding: 0;
+  }
   @include breakpoint(laptopScreen){
     padding: 20px;
   }

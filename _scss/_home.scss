@@ -89,7 +89,7 @@
       padding: 20px;
     }
     @include breakpoint(largeMobileScreen){
-      padding: 25px;
+      padding: 10px;
     }
 }
 .serviceImage{
@@ -136,7 +136,6 @@
 	padding: 20px;
 }
 .certLogo{
-	height: 120px;
 	width: auto;
 		@include breakpoint(smallScreen){
 			height: 100px;
@@ -148,7 +147,7 @@
 			height: 60px;
 		}
 		@include breakpoint(largeScreen){
-			height: 120px;
+			height: 100px;
 		}
 }
 #testimonials{

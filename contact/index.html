@@ -22,8 +22,6 @@ description: Contact Straightline Refrigeration to get started on a custom proje
 
 									<h1 class="whiteText">Let’s Talk Solutions</h1>
 
-									<p class="whiteText"></p>
-
 								</div>
 
 							</div>
@@ -63,19 +61,21 @@ description: Contact Straightline Refrigeration to get started on a custom proje
 
 							<div class="col60 contactWrap centeredContainer">
 
-								<form id="primaryContact" action="https://formspree.io/jparsons@insightcreative.com" method="post">
+								<form id="primaryContact" action="https://formspree.io/kboisvert@straightlinerefrigeration.com" method="post">
+
+									<input type="hidden" name="_cc" value="nluedtke@straightlinerefrigeration.com, jparsons@insightcreative.com" />
 
 								  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-								  <input type="hidden" name="_next"/>
+								  <input type="hidden" name="_next" value="https://straightlinerefrigeration.com/contact/"/>
 
 								  <!-- all your input fields here.... -->
 								  <input type='text' name='firstName' placeholder='First Name' aria-label="first name" required/>
 
-									<input type='text' name='lastName' placeholder='Last Name' aria-label="last name"/>
+									<input type='text' name='lastName' placeholder='Last Name' aria-label="last name" required/>
 
-									<input type='email' name='_replyto' placeholder='you@email.com' aria-label="email address"/>
+									<input type='email' name='_replyto' placeholder='you@email.com' aria-label="email address" required/>
 
-									<input type='tel' name='phone' placeholder='Phone' aria-label="phone number"/>
+									<input type='tel' name='phone' placeholder='Phone' aria-label="phone number" required/>
 
 									<textarea name="message" placeholder='Leave your message here' aria-label="leave your message here"></textarea>
 

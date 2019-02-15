@@ -505,7 +505,7 @@ nav {
       height: 70px;
       align-items: center;
       list-style-type: none;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600; } }
   @media (min-width: 1250px) {
     .linkList2 {
@@ -752,25 +752,36 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Merriweather Sans', sans-serif;
-  line-height: 1.2em;
+  line-height: 1.4em;
   font-weight: 700;
   margin-block-start: 0px !important;
   margin-block-end: 0px !important; }
 
-h1 {
-  font-size: 2em; }
-  @media (min-width: 1250px) {
-    h1 {
-      font-size: 2.827em; } }
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.4em; } }
+@media (min-width: 600px) {
+  h1 {
+    font-size: 1.6em; } }
+@media (min-width: 1250px) {
+  h1 {
+    font-size: 1.8em; } }
 
-h2 {
-  font-size: 1.999em; }
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.4em; } }
+@media (min-width: 600px) {
+  h2 {
+    font-size: 1.6em; } }
+@media (min-width: 1250px) {
+  h2 {
+    font-size: 1.8em; } }
 
 h3 {
-  font-size: 1.414em; }
+  font-size: 1.4em; }
 
 h4 {
-  font-size: 1em; }
+  font-size: 1.2em; }
 
 h5 {
   font-size: 1em; }
@@ -996,7 +1007,7 @@ body {
     padding: 20px; } }
 @media (min-width: 600px) {
   .heroHeading {
-    padding: 25px; } }
+    padding: 10px; } }
 
 .serviceImage {
   width: 100%;
@@ -1036,7 +1047,6 @@ body {
   padding: 20px; }
 
 .certLogo {
-  height: 120px;
   width: auto; }
   @media (max-width: 600px) {
     .certLogo {
@@ -1049,7 +1059,7 @@ body {
       height: 60px; } }
   @media (min-width: 1250px) {
     .certLogo {
-      height: 120px; } }
+      height: 100px; } }
 
 #testimonials {
   background-color: #232323;
@@ -1201,6 +1211,9 @@ body {
 .teamImages {
   padding: 20px; }
   @media (max-width: 600px) {
+    .teamImages {
+      padding: 0; } }
+  @media (min-width: 600px) {
     .teamImages {
       padding: 0; } }
   @media (min-width: 992px) {
